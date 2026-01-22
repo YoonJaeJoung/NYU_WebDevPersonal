@@ -1,6 +1,6 @@
 # General Information
-- This is a github repository for HW assignments of **DM-UY 2193 Intro to Web Development** taught by Professor **Katie Adee** at NYU Tandon School of Engineering.
-- I'm an undergraduate student at KAIST, and I'm taking this course as an exchange student at NYU for Spring 2026.
+- This is a github repository for my HW assignments of **DM-UY 2193 Intro to Web Development** taught by Professor **Katie Adee** at NYU Tandon School of Engineering.
+- I'm taking this course as an exchange student at NYU for Spring 2026.
 
 # Brief Course Overview
 ## Date / Location
