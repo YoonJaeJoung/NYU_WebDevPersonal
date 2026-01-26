@@ -8,6 +8,7 @@
 
 ## Title
 Korean Icy Noodles (aka Mul Naengmyeon)
+Source: [Maangchi](https://www.maangchi.com/recipe/mul-naengmyeon)
 
 ## Image
 ![Mul Naengmyeon](https://www.maangchi.com/wp-content/uploads/2008/06/mulnaengweb.jpg)
