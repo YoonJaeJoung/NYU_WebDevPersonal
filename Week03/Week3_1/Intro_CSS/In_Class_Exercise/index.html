@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Intro to CSS Text and Spans</title>
+  <!-- this is how to make internal style sheet -->
+  <style type="text/CSS">
+    /* this is style for all elements */
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    /* this is a tag selector */
+    h2 {
+      /* color means font color */
+      /* color: blueviolet; */
+      background-color: blueviolet;
+      /* this is hex code for green color with alpha channel */
+      /* hex code is 6 digits for RGB, 8 digits for RGBA */
+      /* color: #00ff0077; */
+      /* this is rgba code for green color with alpha channel */
+      color: rgba(0, 255, 0, 1.0);
+    }
+
+    /* this is style for class 'alignRight' */
+    .alignRight {
+      text-align: right;
+    }
+
+    .alignJustified {
+      text-align: justify;
+    }
+
+    .sillyText {
+      font-family: fantasy;
+      font-size: 20px;
+      font-weight: normal;
+      color: red;
+    }
+
+    /* ID selectors begin with # */
+    #reallyImportant {
+      font-size: 30px;
+      /* integer font-weigths only work if they are supported. */
+      font-weight: bold;
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <p>This is a paragraph.</p>
+  <p class="alignRight">This is a paragraph with the alignRight class.</p>
+  <!-- this is inline style -->
+  <!-- margin: top, right, bottom, left (clockwise), margin-bottom: 20px (specific margin for bottom, overrides the margin set by margin property)-->
+  <p style="text-align: left; margin: 20px 10px 5px 5px; margin-bottom: 20px;">This is a paragraph with the inline
+    style.</p>
+  <p class="alignJustified">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam est sapien, pellentesque sed
+    tempus id, gravida at sem.
+    <span class="sillyText">In maximus tincidunt fermentum. Proin quis justo nunc. Sed
+      molestie sed nisi sit amet
+      molestie. Vestibulum lobortis sollicitudin felis, </span>
+    vehicula ornare leo vulputate nec. Nunc at cursus massa, nec
+    mattis eros. Donec sodales mauris nec urna placerat, et finibus ligula fringilla. Aliquam iaculis fermentum nisl, in
+    vulputate lectus hendrerit ut. Nam eget pulvinar tellus. Nunc sed leo semper sapien vulputate mattis.
+  </p>
+  <h2>This is a heading 2 using h2 style tag - blueviolet color keyword.</h2>
+  <p id="reallyImportant">This is a really important paragraph using ID selector - blue color keyword and bold font
+    weight.</p>
+</body>
+
+</html>
