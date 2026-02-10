@@ -28,8 +28,8 @@
 - [HTML Elements 101 - with notes](Week01/InClassExercise/boilerplate.html)
 - [HTML Elements 101 - implementation](Week01/InClassExercise/index.html)
 ### Assignment
-- [Recipe for Mul-Naengmyeon - layout](Week01/recipe.md)
-- [Recipe for Mul-Naengmyeon - implementation](Week01/index.html)
+- [Recipe for Mul-Naengmyeon - layout](Week01/HW/recipe.md)
+- [Recipe for Mul-Naengmyeon - implementation](Week01/HW/index.html)
 
 ## Week 2
 ### In Class Exercise
@@ -37,7 +37,12 @@
 
 ## Week 3
 ### Lecture Materials
-- [Information Architecture](Week03/Week3_1/InformationArchitecture/README.md)
+- [Information Architecture](Week03/InformationArchitecture/README.md)
+- [CSS 101](Week03/Intro_CSS/README.md)
 ### In Class Exercise
-- [Links, Directories, and Servers - different ways of organizing files](Week03/Week3_1/LinksDirectoriesServers/InClassExercise)
-- [Intro to CSS - with notes](Week03/Week3_1/Intro_CSS/In_Class_Exercise/index.html)
+- [Links, Directories, and Servers - different ways of organizing files](Week03/LinksDirectoriesServers/InClassExercise)
+- [Intro to CSS - with notes](Week03/Intro_CSS/In_Class_Exercise/index.html)
+### Assignment
+- [Analysis of Recipe Website: americastestkitchen.com](Week03/HW/sitemap.pdf)
+- [Recipe Website for Mul-Naengmyeon - wireframe](Week03/HW/wireframe.pdf)
+- [Recipe Website for Mul-Naengmyeon - implementation](Week03/HW/index.html)

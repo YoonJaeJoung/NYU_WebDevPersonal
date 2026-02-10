@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recipe for Mul-Naengmyeon</title>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .logo img {
+      display: block;
+      justify-content: center;
+      align-items: center;
+      width: 4em;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+    }
+
+    header {
+      background-color: rgb(250, 250, 250);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 2.5%;
+      margin-bottom: 1em;
+      padding: 1em;
+    }
+
+    nav ul {
+      display: flex;
+      align-items: center;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      margin-right: 10px;
+      padding: 1em;
+      text-decoration: none;
+      color: black;
+    }
+
+    nav ul li a:hover {
+      background-color: rgba(137, 43, 226, 0.1);
+    }
+
+    body {
+      background-color: rgb(240, 240, 240);
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: left;
+    }
+
+    aside {
+      width: 24%;
+      height: 100%;
+      background-color: rgba(137, 43, 226, 0.1);
+      float: right;
+      padding: 2%;
+      box-sizing: border-box;
+      margin-right: 2.5%;
+    }
+
+    main {
+      padding: 2%;
+      box-sizing: border-box;
+      background-color: rgb(249, 249, 249);
+      width: 70%;
+      float: left;
+      margin-left: 2.5%;
+      margin-right: 1%;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 1em;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 1em;
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      font-size: 14px;
+      margin-bottom: 1em;
+      line-height: 1.5;
+    }
+
+    ul {
+      margin: 0em 0em 1em 1em;
+      line-height: 1.5;
+      padding-left: 1em;
+    }
+
+    ol {
+      margin: 0em 0em 1em 1em;
+      line-height: 1.5;
+      padding-left: 1em;
+    }
+
+    #image {
+      width: 70%;
+      height: auto;
+      margin: 1em;
+    }
+
+    #image img {
+      width: 70%;
+      height: auto;
+    }
+
+    #introduction {
+      display: flex;
+      margin-bottom: 1em;
+      background-color: rgb(230, 230, 230);
+      padding: 1em;
+    }
+
+    #introduction #description * {
+      padding: 0em;
+    }
+
+    #introduction figure {
+      width: 60%;
+      margin-right: 1em;
+      flex-shrink: 0;
+    }
+
+    #introduction img {
+      width: 100%;
+      height: auto;
+    }
+
+    .restaurant-card {
+      text-decoration: none;
+      background-color: white;
+      color: inherit;
+      display: block;
+      margin-bottom: 1em;
+      border: 1px solid #616161;
+      padding: 1em;
+    }
+
+    .restaurant-card img {
+      width: 100%;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+    }
+
+    .restaurant-card:hover {
+      background-color: gainsboro;
+    }
+
+    .restaurant-card * {
+      margin: 0em;
+    }
+
+    footer {
+      clear: both;
+      font-size: 16px;
+      margin: 2.5%;
+      margin-top: 0;
+      padding-top: 1em;
+      overflow: auto;
+    }
+
+    footer * {
+      margin: 0em;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header: Logo and Navigation -->
+  <header>
+    <div class="logo">
+      <a href="#" title="Home"><img src="./img/logo.png" alt="Logo"></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Recipes</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content: Recipe -->
+  <main>
+    <section id="title">
+      <h1>Recipe for Korean Cold Noodels (aka Mul-Naengmyeon)</h1>
+    </section>
+
+    <section id="introduction">
+      <figure>
+        <img src="https://www.maangchi.com/wp-content/uploads/2008/06/mulnaengweb.jpg" alt="Mul-Naengmyeon Image">
+        <figcaption>Image of Mul-Naengmyeon</figcaption>
+      </figure>
+      <section id="description">
+        <h2>Source of the recipe</h2>
+        <p><a href="https://www.maangchi.com/recipe/naengmyeon" target="_blank">link to the original recipe</a></p>
+        <h2>Description</h2>
+        <p>Mul Naengmyeon is a Korean cold noodle dish made with thin, chewy buckwheat noodles served in a refreshing,
+          icy
+          broth. It's a perfect dish for a hot summer day, offering a delightful combination of savory, tangy, and
+          slightly sweet flavors. The dish is typically garnished with sliced beef, pickled radish, cucumber, and a
+          hard-boiled egg, adding a variety of textures and tastes to each bite.</p>
+      </section>
+    </section>
+
+
+    <section id="ingredients">
+      <h2>Ingredients</h2>
+      <ul>
+        <li>10 ounces (280 grams) dried naengmyeon noodles</li>
+        <li>2 packets of liquid or powdered concentrated broth that comes with the package of naengmyeon noodles</li>
+        <li>2 packets of mustard oil that comes with the package of naengmyeon noodles.</li>
+        <li>½ English cucumber, cut into thin strips</li>
+        <li>1 Korean pear (or 2 bosc pears)</li>
+        <li>½ teaspoon kosher salt</li>
+        <li>1½ teaspoon sugar</li>
+        <li>1 tablespoon white or apple cider vinegar</li>
+        <li>1 hard-boiled egg, cut in halves</li>
+        <li>2 tablespoons toasted sesame seeds, ground</li>
+        <li>ice cubes</li>
+      </ul>
+    </section>
+
+    <section id="instructions">
+      <h2>Instructions (Serves 2 people)</h2>
+      <h3>1. Make Broth</h3>
+      <ol>
+        <li>Open the packets of the concentrated broth and put them into a bowl. Mix with 4 cups of water.</li>
+        <li>Keep in the freezer for 4 to 5 hours so it gets slushy.</li>
+        <li>If you can’t make the broth in advance, make the broth with only 2 cups of water and add 2½ cups of ice
+          cubes.
+          Keep it in the fridge while you prepare everything else, and take it out just when you’re ready to serve.
+        </li>
+      </ol>
+      <h3>2. Prepare cucumber and pear garnishes</h3>
+      <ol>
+        <li>Make quick pickled cucumbers by combining the sliced cucumber, kosher salt, ½ teaspoon sugar, and vinegar
+          in
+          a
+          bowl. Mix it well and set aside.</li>
+        <li>Make sugar water by mixing 1 cup of water and 1 teaspoon sugar.</li>
+        <li>Peel the pear and slice into halves. Slice one half into thin strips and soak them in the sugar water to
+          keep
+          them from going brown.</li>
+        <li>Grate the other half of the pear and squeeze out the juice using a cotton cloth or cheesecloth. You should
+          get
+          about ½ cup of pear juice. If you use small bosc pears, use one for garnish and the other for pear juice.
+        </li>
+        <li>Take the bowl of broth out of the freezer. Squeeze some cucumber brine into the broth and add the pear
+          juice.
+        </li>
+        <li>Mix well and put the broth back in the fridge or freezer until the noodles are ready.</li>
+      </ol>
+      <h3>3. Prepare noodles</h3>
+      <ol>
+        <li>Bring a large pot of water to a boil. Add the noodles and stir with a wooden spoon. Cover and let them
+          cook
+          for
+          3 to 5 minutes.</li>
+        <li>Take a sample to taste. When you chew the noodles, there shouldn’t be any hard stuff inside. Be sure not
+          to
+          overcook them or they’ll go soggy.</li>
+        <li>Strain and rinse the noodles in cold running water until they aren’t slippery any more and are well
+          cooled.
+        </li>
+        <li>Fill a large bowl with cold water and some ice cubes. Add the noodles and rinse them a final time.</li>
+        <li>Drain the noodles and divide them into 2 large shallow bowls.</li>
+      </ol>
+      <h3>4. Put it together</h3>
+      <ol>
+        <li>Pour the icy broth into each bowl.</li>
+        <li>Place the cucumber and pear on top.</li>
+        <li>Add a packet of mustard oil to each bowl.</li>
+        <li>Sprinkle with some sesame seeds powder. Add a half egg on top of each bowl.</li>
+        <li>Serve right away.</li>
+      </ol>
+    </section>
+  </main>
+
+  <!-- Aside: Related Recipes and Recommended Restaurants -->
+  <aside>
+    <h2>Related Recipes</h2>
+    <ul>
+      <li><a href="#">Bibim Naengmyeon</a></li>
+      <li><a href="#">Japchae</a></li>
+      <li><a href="#">Kimchi Jjigae</a></li>
+    </ul>
+    <h2>Recommended Restaurants</h2>
+    <p>
+      These are my personal favorite restaurants that serves this food. I highly recommend you to visit them if you
+      get a chance.
+    </p>
+    <a class="restaurant-card" href="https://maps.app.goo.gl/13Qd8HBBMtJe8SGY8" target="_blank">
+      <h3>Woo Lae Oak</h3>
+      <img src="https://farm1.staticflickr.com/507/20043967959_e70949445e_k.jpg"
+        alt="picture of woo lae oak moolnaengmyeon">
+      <p>Woo Lae Oak is one of the best-known Pyongyang naengmyeon restaurants in Seoul, and its traditions have been
+        upheld since its opening in 1946. The broth is what sets this spot apart from other competitors. It is made by
+        boiling Hanwoo foreshank for hours and seasoned with nothing more than salt and soy sauce to create the clean
+        savoury flavour that can only be tasted here. The bulgogi, another popular dish, pairs well with the cold
+        noodles. The restaurant has maintained consistent flavours and has exclusively used local ingredients through
+        its many years of service, which makes it packed with diners around the clock. <br>(text source: Michelin Guide)
+      </p>
+    </a>
+    <a class="restaurant-card" href="https://maps.app.goo.gl/AYkTCNAT8xRwFik1A" target="_blank">
+      <h3>Pildong Myeonok</h3>
+      <img src="https://d12zq4w4guyljn.cloudfront.net/750_750_20251122015411_photo1_b21ceb28c4c2.webp"
+        alt="picture of pildong myeonok mulnaengmyeon">
+      <p>Located near Namsangol Hanok Village by Chungmuro subway station, this restaurant is a Pil-dong landmark that
+        has been serving Pyeongyang cold buckwheat noodles for decades. The restaurant’s chilled broth has a delicate
+        beef flavor, its subtlety both loved and disputed among cold buckwheat noodle aficionados. Another highlight of
+        the restaurant is the buttery and tender boiled pork slices, served in thick slices with a dipping sauce.
+        Homemade dumplings are also popular. <br>(text source: Michelin Guide)
+      </p>
+    </a>
+  </aside>
+
+  <!-- Footer -->
+  <footer>
+    <p style="text-align: left; float: left;">Recipe page for WebDev Class.</p>
+    <p style="text-align: right; float: right;">By Yoonjae Joung. Feb 2026.</p>
+  </footer>
+</body>
+
+</html>
