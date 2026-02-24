@@ -20,13 +20,13 @@ Learn and explore Modern Art
 (bonus points for pinterest collection or mood board)
 [Pinterest collection](https://pin.it/VL7v5UgZl)
 * these websites show the layout I want to implement for the landing page which shows different movements. (however they changed their website design or removed the page, so I cannot view the original website now)
-![reference 1](./reference1.png)
-![reference 2](./reference2.png)
-![reference 3](./reference3.png)
-![reference 4](./reference4.png)
+<img src="./reference4.png" width="30%" />
+<img src="./reference1.png" width="30%" />
+<img src="./reference2.png" width="30%" />
+<img src="./reference3.png" width="30%" />
 * these websites show the layout that will show when i click on a movement.
-![reference 5](./reference5.png)
-![reference 6](./reference6.png)
+<img src="./reference5.png" width="30%" />
+<img src="./reference6.png" width="30%" />
 * more references for the layout of each movement page is in the pinterest board
 
 
