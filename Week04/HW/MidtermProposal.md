@@ -45,4 +45,3 @@ Learn and explore Modern Art
 ## Wireframe/sitemap
 * [Sitemap](./sitemap.pdf)
 * [Wireframe](./wireframe.pdf)
-  * still working on the wireframe, will update before the class
