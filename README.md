@@ -46,3 +46,27 @@
 - [Analysis of Recipe Website: americastestkitchen.com](Week03/HW/sitemap.pdf)
 - [Recipe Website for Mul-Naengmyeon - wireframe](Week03/HW/wireframe.pdf)
 - [Recipe Website for Mul-Naengmyeon - implementation](Week03/HW/index.html)
+
+## Week 4
+### Lecture Materials
+- [Positioning 101](Week04/Positioning/README.md)
+- [CSS3 Transforms & Transitions](Week04/CSS3TransformsTransitions/README.md)
+- [Flexbox](Week04/Flexbox/README.md)
+- [Media Queries](Week04/MediaQueries/README.md)
+### In Class Exercise
+- [Positioning](Week04/Positioning/InClassExercise/index.html)
+- [Navbar Dropdown](Week04/NavbarDropdown/index.html)
+- [Gallery](Week04/Gallery/InClassExercise/index.html)
+- [CSS3 Transforms & Transitions](Week04/CSS3TransformsTransitions/InClassExercise/index.html)
+- [Flexbox](Week04/Flexbox/InClassExercise/Index.html)
+- [Media Queries](Week04/MediaQueries/InClassExercise/index.html)
+### Assignment
+- [Midterm Project Proposal](Week04/HW/MidtermProposal.md)
+
+## Week 5
+* no class
+
+## Week 6
+### Lecture Materials
+### In Class Exercise
+### Assignment
