@@ -24,7 +24,11 @@ Learn and explore Modern Art
 ![reference 2](./reference2.png)
 ![reference 3](./reference3.png)
 ![reference 4](./reference4.png)
-* reference for the layout of each movement page is in the pinterest board
+* these websites show the layout that will show when i click on a movement.
+![reference 5](./reference5.png)
+![reference 6](./reference6.png)
+* more references for the layout of each movement page is in the pinterest board
+
 
 ## Concepts/skills we have covered that you will use to build your site
 * HTML Elements
