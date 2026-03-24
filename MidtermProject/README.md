@@ -5,9 +5,12 @@
 This is where the assignment submission and grading will take place.
 
 ## Links & Presentation
+
+![Main Screenshot](./presentation/screenshots/1.main.png)
+
 - **Public Website**: [https://yoonjaejoung.github.io/ModernArtGuide/index.html](https://yoonjaejoung.github.io/ModernArtGuide/index.html)
 - **Github Repository**: [https://github.com/yoonjaejoung/ModernArtGuide](https://github.com/yoonjaejoung/ModernArtGuide) (I separated the live version of code to a different private repository for future development/updates and github page support. Files are copied here for the midterm project submission.)
-- **Presentation**: `presentation.pdf` is the file used for the presentation.
+- **Presentation**: The presentation deck is located in the `presentation/` folder.
 
 ## Project Context
 
@@ -44,7 +47,6 @@ MidtermProject/
 ├── index.html
 ├── museums.html
 ├── README.md
-├── presentation.pdf
 ├── artists/
 │   └── artist.html
 ├── artworks/
@@ -72,6 +74,9 @@ MidtermProject/
 │   └── movement.html
 ├── museums/
 │   └── museum.html
+├── presentation/
+│   ├── presentation.pdf
+│   └── screenshots/
 ├── proposal/
 │   └── proposal.md
 └── resource/
