@@ -1,0 +1,212 @@
+[
+  {
+    "id": "baroque",
+    "name": "Baroque",
+    "period": "c. 1600–1750",
+    "years": 150,
+    "startYear": 1600,
+    "endYear": 1750,
+    "color": "#dfbc62",
+    "description": [
+      "Baroque art emphasizes drama, movement, and emotional intensity. Key characteristics include strong contrasts between shadow and light (chiaroscuro), and the dynamic tension between rational classicism and painterly effects.",
+      "The movement serves as a vital reference point for later styles like Rococo and Neoclassicism, particularly in discussions regarding state power, complex composition, and the grandeur of history painting."
+    ],
+    "artists": ["nicolas-poussin", "peter-paul-rubens"],
+    "artworks": ["poussin-et-in-arcadia-ego", "rubens-massacre-of-the-innocents"]
+  },
+  {
+    "id": "rococo",
+    "name": "Rococo",
+    "period": "c. 1730–1780",
+    "years": 50,
+    "startYear": 1730,
+    "endYear": 1780,
+    "color": "#ffb4ff",
+    "description": [
+      "Rococo represents a transition from the formal state power of the Baroque toward a more intimate aristocratic leisure culture. It favors decorative elegance, lighter subject matter, and a vibrant, color-rich sensibility.",
+      "Associated with scenes of pleasure and refined social interaction, the style continues the long-standing European debate between the priorities of line and color."
+    ],
+    "artists": ["jean-antoine-watteau"],
+    "artworks": ["watteau-pilgrimage-to-cythera"]
+  },
+  {
+    "id": "neoclassicism",
+    "name": "Neoclassicism",
+    "period": "c. 1760–1830",
+    "years": 70,
+    "startYear": 1760,
+    "endYear": 1830,
+    "color": "#b3b3b3",
+    "description": [
+      "Neoclassicism emerged alongside Enlightenment ideals, political revolutions, and a renewed fascination with antiquity. It emphasizes order, rationality, civic virtue, and moral seriousness.",
+      "The style is defined by clear horizontal and vertical axes, stable geometric compositions, and sculptural form, while also displaying transitional elements that lead toward Romanticism."
+    ],
+    "artists": ["jacques-louis-david", "jean-auguste-dominique-ingres", "benjamin-west", "anton-raphael-mengs"],
+    "artworks": ["david-oath-of-the-horatii", "west-death-of-general-wolfe", "mengs-parnassus", "ingres-grande-odalisque"]
+  },
+  {
+    "id": "romanticism",
+    "name": "Romanticism",
+    "period": "c. 1790–1850",
+    "years": 60,
+    "startYear": 1790,
+    "endYear": 1850,
+    "color": "#0d9c6a",
+    "description": [
+      "Romanticism values emotion, dramatic experience, and the intensity of contemporary life. It serves as a reaction against strict neoclassical restraint, utilizing bold color, dynamic movement, and deep psychological engagement.",
+      "The movement explores themes of political trauma, the sublime power of nature, and existential concepts such as hope and survival, expanding artistic subjects beyond classical history."
+    ],
+    "artists": ["francisco-goya", "theodore-gericault", "eugene-delacroix", "jmw-turner", "caspar-david-friedrich"],
+    "artworks": ["goya-third-of-may", "gericault-raft-of-the-medusa", "delacroix-liberty-leading-the-people", "friedrich-wanderer-above-sea-of-fog", "turner-rain-steam-speed"]
+  },
+  {
+    "id": "realism",
+    "name": "Realism",
+    "period": "c. 1840–1880",
+    "years": 40,
+    "startYear": 1840,
+    "endYear": 1880,
+    "color": "#754c24",
+    "description": [
+      "Realism focuses on contemporary life, ordinary people, and authentic social conditions rather than idealized myths. It engages with class struggle, urban transformation, and the dignity found in everyday subjects.",
+      "Realist artists challenged academic hierarchies by painting modern scenes on a large scale, flattening traditional depth, and emphasizing the visible materiality of paint."
+    ],
+    "artists": ["gustave-courbet", "honore-daumier", "edouard-manet"],
+    "artworks": ["courbet-burial-at-ornans", "courbet-painters-studio", "courbet-woman-with-parrot", "manet-luncheon-on-the-grass"]
+  },
+  {
+    "id": "impressionism",
+    "name": "Impressionism",
+    "period": "c. 1860–1890",
+    "years": 30,
+    "startYear": 1860,
+    "endYear": 1890,
+    "color": "#7adcd4",
+    "description": [
+      "Impressionism captures fleeting light, atmosphere, and the spontaneity of modern life. Key technical advancements include painting en plein air (outdoors), the use of portable paint tubes, and the influence of early photography.",
+      "Its formal features include visible brushstrokes, bright palettes, cropped compositions, and a move away from strict contours to emphasize sensory experience."
+    ],
+    "artists": ["claude-monet"],
+    "artworks": ["monet-impression-sunrise", "monet-water-lilies"]
+  },
+  {
+    "id": "neo-impressionism",
+    "name": "Neo-Impressionism",
+    "period": "c. 1884–1905",
+    "years": 21,
+    "startYear": 1884,
+    "endYear": 1905,
+    "color": "#7ea679",
+    "description": [
+      "Neo-Impressionism (often associated with Pointillism and Divisionism) applies color theory through optical mixing: placing dots or strokes of pure color side by side for the viewer's eye to combine.",
+      "The movement seeks a more systematic and structural visual order while maintaining the intensity and brilliance of modern color."
+    ],
+    "artists": ["georges-seurat", "paul-signac"],
+    "artworks": ["seurat-sunday-on-la-grande-jatte", "signac-port-of-saint-tropez"]
+  },
+  {
+    "id": "post-impressionism",
+    "name": "Post-Impressionism",
+    "period": "c. 1886–1905",
+    "years": 19,
+    "startYear": 1886,
+    "endYear": 1905,
+    "color": "#e18256",
+    "description": [
+      "Post-Impressionism moves beyond optical impressions to explore underlying structure, emotional expression, and symbolic meaning. Paul Cézanne, in particular, investigated essential form and spatial instability on a flat canvas.",
+      "The period is marked by subjective color use and expressive surface treatments, laying the groundwork for Expressionism and Symbolism."
+    ],
+    "artists": ["paul-cezanne", "vincent-van-gogh", "paul-gauguin"],
+    "artworks": ["cezanne-mont-sainte-victoire", "cezanne-basket-of-apples", "van-gogh-starry-night", "gauguin-where-do-we-come-from"]
+  },
+  {
+    "id": "symbolism",
+    "name": "Symbolism",
+    "period": "c. 1880–1910",
+    "years": 30,
+    "startYear": 1880,
+    "endYear": 1910,
+    "color": "#4a6792",
+    "description": [
+      "Symbolism shifts away from naturalistic depiction toward representing inner states: dreams, desires, imagination, and melancholy. It is a search for invisible or spiritual realities rather than external appearances.",
+      "This movement bridges late nineteenth-century painting with modern experiments in color and form, emphasizing the mystical and the psychological."
+    ],
+    "artists": ["paul-gauguin", "edvard-munch", "gustave-moreau", "odilon-redon", "gustav-klimt"],
+    "artworks": ["munch-the-scream", "gauguin-vision-after-the-sermon", "moreau-the-apparition", "redon-the-eye", "klimt-death-and-life"]
+  },
+  {
+    "id": "fauvism",
+    "name": "Fauvism",
+    "period": "c. 1905–1910",
+    "years": 5,
+    "startYear": 1905,
+    "endYear": 1910,
+    "color": "#ff80ff",
+    "description": [
+      "Fauvism is characterized by the liberation of color from its descriptive function in nature. Building on Post-Impressionist developments, artists used intense, non-naturalistic color for maximum expressive impact.",
+      "Henri Matisse is a central figure, pushing the boundaries of color freedom while simultaneously distilling and distorting form to convey emotion."
+    ],
+    "artists": ["henri-matisse"],
+    "artworks": ["matisse-woman-with-a-hat", "matisse-dance"]
+  },
+  {
+    "id": "expressionism",
+    "name": "Expressionism",
+    "period": "c. 1905–1925",
+    "years": 20,
+    "startYear": 1905,
+    "endYear": 1925,
+    "color": "#3c48b7",
+    "description": [
+      "Expressionism prioritizes psychological intensity over naturalistic representation. It frequently involves exaggerated forms, distorted anatomy, and color used as a raw emotional force rather than an imitation of the physical world.",
+      "The movement is deeply connected to themes of anxiety, the alienation of modern urban life, and social crises, particularly in Central European contexts."
+    ],
+    "artists": ["edvard-munch", "egon-schiele", "ernst-ludwig-kirchner", "emil-nolde", "wassily-kandinsky"],
+    "artworks": ["munch-the-scream", "schiele-self-portrait", "kirchner-street-berlin", "kandinsky-composition-vii"]
+  },
+  {
+    "id": "cubism",
+    "name": "Cubism",
+    "period": "c. 1907–1920",
+    "years": 13,
+    "startYear": 1907,
+    "endYear": 1920,
+    "color": "#bf8745",
+    "description": [
+      "Cubism deconstructs single-point perspective, analyzing objects from multiple viewpoints simultaneously. It is distinguished by Analytic Cubism (fragmentation and structural analysis) and Synthetic Cubism (incorporating collage and signs).",
+      "Influenced by Cézanne's spatial experiments and new scientific concepts like the fourth dimension, it presents perception as a dynamic and multifaceted process."
+    ],
+    "artists": ["pablo-picasso", "constantin-brancusi"],
+    "artworks": ["picasso-les-demoiselles-davignon", "picasso-guernica", "brancusi-bird-in-space"]
+  },
+  {
+    "id": "futurism",
+    "name": "Futurism",
+    "period": "c. 1909–1916",
+    "years": 7,
+    "startYear": 1909,
+    "endYear": 1916,
+    "color": "#ff002a",
+    "description": [
+      "Futurism celebrates speed, technology, urban energy, and the dynamism of modern life. It emerged in Italy through manifestos that rejected the past in favor of a bold, forward-looking aesthetic.",
+      "Spanning painting, theater, and music, Futurism explores the succession of movement, sensory immersion, and noise as legitimate artistic materials."
+    ],
+    "artists": ["giacomo-balla", "umberto-boccioni", "luigi-russolo"],
+    "artworks": ["balla-dynamism-of-a-dog-on-a-leash", "russolo-dynamism-of-a-car", "boccioni-dynamism-of-a-soccer-player", "boccioni-unique-forms-of-continuity"]
+  },
+  {
+    "id": "dada",
+    "name": "Dada",
+    "period": "c. 1916–1924",
+    "years": 8,
+    "startYear": 1916,
+    "endYear": 1924,
+    "color": "#000000",
+    "description": [
+      "Dada emerged during World War I as an anti-war, anti-art, and anti-establishment movement. It challenged the logic and culture of a civilization that had descended into catastrophic violence.",
+      "The movement redefined art through conceptual depth, context, and institutional critique, frequently rejecting traditional craft-based notions of originality in favor of the 'readymade'."
+    ],
+    "artists": ["marcel-duchamp"],
+    "artworks": ["duchamp-fountain", "duchamp-bicycle-wheel"]
+  }
+]

@@ -1,0 +1,232 @@
+/* ===== ≤ 1050px ===== */
+@media (max-width: 1050px) {
+	.gallery-sidebar {
+		width: 220px;
+	}
+
+	.page-grid {
+		grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+	}
+}
+
+/* ===== ≤ 768px ===== */
+@media (max-width: 768px) {
+
+	/* --- Nav --- */
+	.top-nav {
+		justify-content: center;
+		padding: 1rem var(--content-gutter);
+		z-index: 90;
+	}
+
+	.menu-toggle {
+		display: inline-grid;
+		place-items: center;
+		position: fixed;
+		left: var(--content-gutter);
+		width: 2.15rem;
+		height: 2.15rem;
+		border: 1px solid #ffffff;
+		background: #ffffff;
+		color: var(--brand-color);
+		font-size: 1.35rem;
+		line-height: 1;
+		padding: 0;
+		border-radius: 50%;
+		cursor: pointer;
+		z-index: 95;
+	}
+
+	.nav-links {
+		display: none;
+		position: absolute;
+		top: calc(100% + 1.2rem);
+		left: var(--content-gutter);
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 0.55rem;
+		padding: 0;
+		background: transparent;
+		border: 0;
+		z-index: 100;
+	}
+
+	.nav-links a {
+		width: auto;
+		text-align: left;
+		font-size: 1.02rem;
+		padding: 0.3rem 0.72rem;
+	}
+
+	.top-nav.is-menu-open .nav-links {
+		display: flex;
+	}
+
+	.top-nav.is-menu-open .nav-links a {
+		background: var(--brand-color);
+		color: #ffffff;
+		border-color: var(--brand-color);
+	}
+
+	.top-nav.is-menu-open .nav-links a:hover,
+	.top-nav.is-menu-open .nav-links a:focus-visible {
+		background: #ffffff;
+		color: var(--brand-color);
+	}
+
+	/* Index page: tighter nav position */
+	body.index-page .nav-links {
+		top: calc(100% - 0.2rem);
+	}
+
+	/* Gradient backdrop behind mobile nav links (not on index page) */
+	.top-nav.is-menu-open .nav-links::before {
+		content: '';
+		position: absolute;
+		top: -1.2rem;
+		left: -2rem;
+		width: 100vw;
+		bottom: -15rem;
+		background: linear-gradient(to bottom, #ffffff, transparent);
+		border-radius: 0;
+		z-index: -1;
+		pointer-events: none;
+	}
+
+	body.index-page .top-nav.is-menu-open .nav-links::before {
+		display: none;
+	}
+
+	/* --- Movement detail: stack vertically --- */
+	.movement-page {
+		flex-direction: column;
+	}
+
+	.movement-page__left {
+		position: relative;
+		width: 100%;
+		height: auto;
+		min-height: auto;
+		padding-top: 5rem;
+		padding-bottom: 2rem;
+	}
+
+	.movement-page__right {
+		margin-left: 0;
+		width: 100%;
+		min-height: auto;
+		padding-top: 1.5rem;
+	}
+
+	/* --- Artwork detail: mobile adjustments --- */
+	.artwork-detail__right {
+		padding: 1rem;
+	}
+
+	.artwork-detail__full-image {
+		max-height: 60vh;
+	}
+
+	/* --- Gallery: collapse sidebar --- */
+	.gallery-layout {
+		flex-direction: column;
+	}
+
+	.gallery-sidebar {
+		width: 100%;
+		position: static;
+		height: auto;
+		border-right: none;
+		border-bottom: 1px solid #e0e0e0;
+		padding: 1rem var(--content-gutter);
+	}
+
+	/* --- Compare: stack panels --- */
+	.compare-layout {
+		flex-direction: column;
+	}
+
+	/* --- Page grid --- */
+	.page-grid {
+		grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+	}
+
+	/* --- Art cards: mobile layout --- */
+	.art-card {
+		max-height: none;
+		flex-direction: column;
+	}
+
+	.art-card__info {
+		display: block;
+		padding: 0.75rem 0.9rem;
+		color: #ffffff;
+		order: -1;
+		/* info above the image */
+	}
+
+	.art-card__overlay {
+		display: none !important;
+	}
+
+	.art-card__mobile-browse {
+		display: flex;
+		align-items: center;
+		gap: 0.35rem;
+		margin: auto 0.2rem 0.2rem;
+		padding: 0.6rem 0.9rem;
+		background-color: #ffffff;
+		color: var(--page-color);
+		font-weight: 600;
+		text-decoration: none;
+		font-size: 0.82rem;
+		font-family: Georgia, "Times New Roman", serif;
+		border: 1px solid #ffffff;
+		border-radius: 0.3rem;
+	}
+
+	.art-card__mobile-detail {
+		display: flex;
+		align-items: center;
+		margin: 0.2rem 0.2rem;
+		padding: 0.6rem 0.9rem;
+		background: #ffffff;
+		color: var(--page-color);
+		font-weight: 600;
+		text-decoration: none;
+		font-size: 0.82rem;
+		font-family: Georgia, "Times New Roman", serif;
+		border: 1px solid #ffffff;
+		border-radius: 0.3rem;
+	}
+
+	.art-card__image {
+		object-fit: contain;
+		width: 100%;
+		height: auto;
+		max-height: 100vmin;
+		aspect-ratio: auto;
+		flex: none;
+		margin-bottom: 0.4rem;
+	}
+}
+
+/* ===== ≤ 600px ===== */
+@media (max-width: 600px) {
+	.artwork-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.gallery-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.page-grid {
+		grid-template-columns: 1fr;
+		padding-top: 5rem;
+	}
+
+	.movement-page__name {
+		font-size: 2rem;
+	}
+}

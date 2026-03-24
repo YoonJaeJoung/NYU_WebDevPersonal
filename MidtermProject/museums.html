@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Museums — Modern Art Library</title>
+	<meta name="description" content="Explore museums housing modern art masterpieces, in NYC and around the world." />
+	<link rel="stylesheet" href="assets/css/base.css" />
+	<link rel="stylesheet" href="assets/css/components.css" />
+	<link rel="stylesheet" href="assets/css/layout.css" />
+	<link rel="stylesheet" href="assets/css/responsive.css" />
+	<link rel="stylesheet" href="assets/css/book-stack.css" />
+</head>
+
+<body class="shelf-page">
+	<header class="top-nav" id="top">
+		<a class="nav-title" href="index.html">Modern Art Library</a>
+		<button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"
+			aria-label="Open menu"><span class="icon-open" aria-hidden="true">☰</span><span class="icon-close"
+				aria-hidden="true">✕</span></button>
+		<nav class="nav-links" id="main-nav" aria-label="Main navigation">
+			<a href="index.html">Movements</a>
+			<a href="artists.html">Artists</a>
+			<a href="museums.html">Museums</a>
+			<a href="gallery.html">Artworks</a>
+			<a href="about.html">About</a>
+		</nav>
+	</header>
+
+	<aside class="info-left" aria-live="polite">
+		<span class="info-movement" id="info-movement">Museum Name</span>
+		<span class="info-years" id="info-years">Location</span>
+		<span class="info-hint" id="info-hint">Hover on the book to see museum details. Click to explore their collection.</span>
+	</aside>
+
+	<aside class="info-right" aria-live="polite" id="info-artists">
+		<span class="artist">Movements</span>
+	</aside>
+
+	<div class="stage">
+		<main id="book-stack" aria-label="Museums bookshelf">
+			<!-- Populated by JS -->
+		</main>
+	</div>
+
+	<script src="assets/js/nav.js"></script>
+	<script>
+		(function () {
+			var BASE = 'assets/data/';
+			var bodyEl = document.body;
+			var books = [];
+			var movementEl = document.getElementById('info-movement');
+			var yearsEl = document.getElementById('info-years');
+			var artistsEl = document.getElementById('info-artists');
+			var hintEl = document.getElementById('info-hint');
+
+			fetch(BASE + 'museums.json')
+				.then(function (r) { return r.json(); })
+				.then(function (museums) {
+					var stack = document.getElementById('book-stack');
+
+					// Sort alphabetically
+					museums.sort(function (a, b) {
+						return a.name.localeCompare(b.name);
+					});
+
+					museums.forEach(function (museum) {
+						// Use name length as rough proxy for book height variation
+						var nameLen = museum.name.length;
+
+						var book = document.createElement('a');
+						book.className = 'book';
+						book.href = 'museums/museum.html?id=' + museum.id;
+						book.style.setProperty('--years', Math.max(10, nameLen));
+						book.dataset.movement = museum.name;
+						book.dataset.years = museum.address;
+						book.dataset.artists = museum.highlights.join('|');
+						book.innerHTML = '<span class="book-title">' + museum.name + '</span>';
+
+						book.addEventListener('mouseenter', function () { showDetails(book); });
+						book.addEventListener('focus', function () { showDetails(book); });
+						book.addEventListener('mouseleave', showPlaceholder);
+						book.addEventListener('blur', showPlaceholder);
+
+						stack.appendChild(book);
+					});
+
+					books = document.querySelectorAll('.book');
+					showPlaceholder();
+				});
+
+			function showPlaceholder() {
+				bodyEl.classList.remove('is-hovering');
+				if (books.length) books.forEach(function (b) { b.classList.remove('is-active'); b.style.background = ''; });
+				movementEl.textContent = 'Museum Name';
+				yearsEl.textContent = 'Location';
+				hintEl.textContent = 'Hover on the book to see museum details and related movements. Click to explore their collection.';
+				hintEl.style.display = 'block';
+				artistsEl.innerHTML = '<span class="artist">Movements</span>';
+			}
+
+			function showDetails(book) {
+				bodyEl.classList.add('is-hovering');
+				books.forEach(function (b) { b.classList.remove('is-active'); b.style.background = ''; });
+				book.classList.add('is-active');
+				// Museum hover uses brand color
+				book.style.background = 'var(--brand-color)';
+
+				movementEl.textContent = book.dataset.movement || 'Museum Name';
+				yearsEl.textContent = book.dataset.years || 'Location';
+				hintEl.style.display = 'none';
+
+				var highlights = (book.dataset.artists || '').split('|').filter(Boolean);
+				artistsEl.innerHTML = highlights
+					.map(function (name) { return '<span class="artist">' + name + '</span>'; })
+					.join('');
+			}
+		})();
+	</script>
+</body>
+
+</html>

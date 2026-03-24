@@ -1,0 +1,372 @@
+[
+  {
+    "id": "nicolas-poussin",
+    "name": "Nicolas Poussin",
+    "movementIds": ["baroque"],
+    "bio": "French painter and the leading figure of 17th-century classical French painting. Known for rational compositions and history paintings rooted in ancient subjects.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Nicolas_Poussin_078.jpg/440px-Nicolas_Poussin_078.jpg",
+    "born": "1594",
+    "died": "1665",
+    "nationality": "French"
+  },
+  {
+    "id": "peter-paul-rubens",
+    "name": "Peter Paul Rubens",
+    "movementIds": ["baroque"],
+    "bio": "Flemish artist renowned for color-driven dramatic compositions with dynamic movement and sensuous forms. A key proponent of the Baroque's theatrical style.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Rubensself.jpg/440px-Rubensself.jpg",
+    "born": "1577",
+    "died": "1640",
+    "nationality": "Flemish"
+  },
+  {
+    "id": "jean-antoine-watteau",
+    "name": "Jean-Antoine Watteau",
+    "movementIds": ["rococo"],
+    "bio": "French painter whose brief career helped define Rococo art. Best known for fêtes galantes — scenes of idyllic aristocratic amusements set in lush landscapes.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Jean-Antoine_Watteau_-_Self-Portrait.jpg/440px-Jean-Antoine_Watteau_-_Self-Portrait.jpg",
+    "born": "1684",
+    "died": "1721",
+    "nationality": "French"
+  },
+  {
+    "id": "jacques-louis-david",
+    "name": "Jacques-Louis David",
+    "movementIds": ["neoclassicism"],
+    "bio": "Leading French Neoclassical painter who used ancient Roman motifs to convey modern political ideals. Painter to both King Louis XVI and Napoleon.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/David_Self_Portrait.jpg/440px-David_Self_Portrait.jpg",
+    "born": "1748",
+    "died": "1825",
+    "nationality": "French"
+  },
+  {
+    "id": "jean-auguste-dominique-ingres",
+    "name": "J.-A.-D. Ingres",
+    "movementIds": ["neoclassicism"],
+    "bio": "French Neoclassical painter known for sinuous contour, flattened depth, and idealized form. His work bridges classicism with Romantic sensuality.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Jean_auguste_dominique_ingres_autoportrait.jpg/440px-Jean_auguste_dominique_ingres_autoportrait.jpg",
+    "born": "1780",
+    "died": "1867",
+    "nationality": "French"
+  },
+  {
+    "id": "benjamin-west",
+    "name": "Benjamin West",
+    "movementIds": ["neoclassicism"],
+    "bio": "Anglo-American painter who innovated the history painting genre by depicting modern events in classical style, notably The Death of General Wolfe.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Benjamin_West_self_portrait_1819.jpg/440px-Benjamin_West_self_portrait_1819.jpg",
+    "born": "1738",
+    "died": "1820",
+    "nationality": "American-British"
+  },
+  {
+    "id": "anton-raphael-mengs",
+    "name": "Anton Raphael Mengs",
+    "movementIds": ["neoclassicism"],
+    "bio": "German painter active in Rome, Madrid, and Saxony, who became one of the precursors to Neoclassicism. He was a close friend of Winckelmann and sought to revive classical antiquity.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Anton_Raphael_Mengs_-_Self-Portrait_-_WGA14815.jpg/440px-Anton_Raphael_Mengs_-_Self-Portrait_-_WGA14815.jpg",
+    "born": "1728",
+    "died": "1779",
+    "nationality": "German"
+  },
+  {
+    "id": "girodet",
+    "name": "Anne-Louis Girodet",
+    "movementIds": ["neoclassicism"],
+    "bio": "Pupil of David who blended Neoclassical technique with Romantic mood. His Sleep of Endymion exemplifies the transition between the two movements.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Girodet_Autoportrait.jpg/440px-Girodet_Autoportrait.jpg",
+    "born": "1767",
+    "died": "1824",
+    "nationality": "French"
+  },
+  {
+    "id": "francisco-goya",
+    "name": "Francisco Goya",
+    "movementIds": ["romanticism"],
+    "bio": "Spanish painter and printmaker who documented war, social corruption, and human irrationality. His work moves from elegant court portraits to dark, haunting visions.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Francisco_de_Goya_y_Lucientes_-_Self-portrait_-_WGA10141.jpg/440px-Francisco_de_Goya_y_Lucientes_-_Self-portrait_-_WGA10141.jpg",
+    "born": "1746",
+    "died": "1828",
+    "nationality": "Spanish"
+  },
+  {
+    "id": "theodore-gericault",
+    "name": "Théodore Géricault",
+    "movementIds": ["romanticism"],
+    "bio": "French Romantic painter whose Raft of the Medusa shocked audiences with its raw depiction of human suffering and political scandal.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Horace_Vernet_-_Jean_Louis_Andr%C3%A9_Th%C3%A9odore_G%C3%A9ricault_-_WGA24724.jpg/440px-Horace_Vernet_-_Jean_Louis_Andr%C3%A9_Th%C3%A9odore_G%C3%A9ricault_-_WGA24724.jpg",
+    "born": "1791",
+    "died": "1824",
+    "nationality": "French"
+  },
+  {
+    "id": "eugene-delacroix",
+    "name": "Eugène Delacroix",
+    "movementIds": ["romanticism"],
+    "bio": "Leading French Romantic painter known for expressive color, dynamic brushwork, and politically charged subjects. Liberty Leading the People is among his most iconic works.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Eug%C3%A8ne_Delacroix_-_autoportrait_au_gilet_vert_-_mus%C3%A9e_du_Louvre.jpg/440px-Eug%C3%A8ne_Delacroix_-_autoportrait_au_gilet_vert_-_mus%C3%A9e_du_Louvre.jpg",
+    "born": "1798",
+    "died": "1863",
+    "nationality": "French"
+  },
+  {
+    "id": "jmw-turner",
+    "name": "J. M. W. Turner",
+    "movementIds": ["romanticism"],
+    "bio": "English Romantic landscape painter celebrated for luminous, atmospheric studies of light, weather, and speed. His late works anticipate Impressionism.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Turner_selfportrait.jpg/440px-Turner_selfportrait.jpg",
+    "born": "1775",
+    "died": "1851",
+    "nationality": "British"
+  },
+  {
+    "id": "caspar-david-friedrich",
+    "name": "Caspar David Friedrich",
+    "movementIds": ["romanticism"],
+    "bio": "German Romantic painter known for contemplative, allegorical landscapes evoking the sublime. Figures are often seen from behind, gazing into vast nature.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/C_D_Friedrich.jpg/440px-C_D_Friedrich.jpg",
+    "born": "1774",
+    "died": "1840",
+    "nationality": "German"
+  },
+  {
+    "id": "gustave-courbet",
+    "name": "Gustave Courbet",
+    "movementIds": ["realism"],
+    "bio": "French Realist who insisted that art should depict only things the artist can see. His monumental paintings of peasants and laborers challenged academic conventions.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Gustave_Courbet_-_Le_D%C3%A9sesp%C3%A9r%C3%A9.jpg/440px-Gustave_Courbet_-_Le_D%C3%A9sesp%C3%A9r%C3%A9.jpg",
+    "born": "1819",
+    "died": "1877",
+    "nationality": "French"
+  },
+  {
+    "id": "honore-daumier",
+    "name": "Honoré Daumier",
+    "movementIds": ["realism"],
+    "bio": "French caricaturist, painter, and sculptor whose incisive satirical lithographs chronicled political corruption and social inequality in 19th-century France.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Nadar_-_Honor%C3%A9_Daumier_%281856-58%29.jpg/440px-Nadar_-_Honor%C3%A9_Daumier_%281856-58%29.jpg",
+    "born": "1808",
+    "died": "1879",
+    "nationality": "French"
+  },
+  {
+    "id": "edouard-manet",
+    "name": "Édouard Manet",
+    "movementIds": ["realism"],
+    "bio": "French painter who bridged Realism and Impressionism. His bold confrontation of the viewer and flattened pictorial space challenged traditional painting conventions.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Edouard_Manet_-_Edouard_Manet%2C_par_lui-meme%2C_en_buste.jpg/440px-Edouard_Manet_-_Edouard_Manet%2C_par_lui-meme%2C_en_buste.jpg",
+    "born": "1832",
+    "died": "1883",
+    "nationality": "French"
+  },
+  {
+    "id": "claude-monet",
+    "name": "Claude Monet",
+    "movementIds": ["impressionism"],
+    "bio": "Founder of French Impressionism whose serial paintings of haystacks, cathedrals, and water lilies capture the fleeting effects of light and atmosphere.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Claude_Monet_1899_Nadar_crop.jpg/440px-Claude_Monet_1899_Nadar_crop.jpg",
+    "born": "1840",
+    "died": "1926",
+    "nationality": "French"
+  },
+  {
+    "id": "georges-seurat",
+    "name": "Georges Seurat",
+    "movementIds": ["neo-impressionism"],
+    "bio": "French painter who pioneered Pointillism, applying systematic dots of pure color on canvas for the eye to optically blend. His methods gave Impressionism a scientific foundation.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Georges_Seurat_1888.jpg/440px-Georges_Seurat_1888.jpg",
+    "born": "1859",
+    "died": "1891",
+    "nationality": "French"
+  },
+  {
+    "id": "paul-signac",
+    "name": "Paul Signac",
+    "movementIds": ["neo-impressionism"],
+    "bio": "French painter who expanded Seurat's Pointillist technique with bolder, mosaic-like color blocks. An influential theorist and champion of Neo-Impressionism.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Signac_-_portrait_de_F%C3%A9lix_F%C3%A9n%C3%A9on.jpg/440px-Signac_-_portrait_de_F%C3%A9lix_F%C3%A9n%C3%A9on.jpg",
+    "born": "1863",
+    "died": "1935",
+    "nationality": "French"
+  },
+  {
+    "id": "paul-cezanne",
+    "name": "Paul Cézanne",
+    "movementIds": ["post-impressionism"],
+    "bio": "French Post-Impressionist painter who explored the underlying geometry of nature. Often called the father of modern art for his influence on Cubism and abstraction.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Paul_C%C3%A9zanne%2C_photograph.jpg/440px-Paul_C%C3%A9zanne%2C_photograph.jpg",
+    "born": "1839",
+    "died": "1906",
+    "nationality": "French"
+  },
+  {
+    "id": "vincent-van-gogh",
+    "name": "Vincent van Gogh",
+    "movementIds": ["post-impressionism"],
+    "bio": "Dutch Post-Impressionist master of expressive color, bold brushwork, and emotional intensity. Despite selling few works in his lifetime, he became one of the most influential artists in history.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg/440px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg",
+    "born": "1853",
+    "died": "1890",
+    "nationality": "Dutch"
+  },
+  {
+    "id": "paul-gauguin",
+    "name": "Paul Gauguin",
+    "movementIds": ["post-impressionism", "symbolism"],
+    "bio": "French painter who rejected European conventions and sought spiritual meaning in non-Western cultures. His symbolic, anti-naturalistic style influenced many modern art movements.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Paul_Gauguin_1891.png/440px-Paul_Gauguin_1891.png",
+    "born": "1848",
+    "died": "1903",
+    "nationality": "French"
+  },
+  {
+    "id": "edvard-munch",
+    "name": "Edvard Munch",
+    "movementIds": ["symbolism", "expressionism"],
+    "bio": "Norwegian painter and printmaker whose deeply personal themes of anxiety, death, love, and alienation helped define Expressionism. The Scream is among the most recognizable images in art history.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Edvard_Munch_1912.jpg/440px-Edvard_Munch_1912.jpg",
+    "born": "1863",
+    "died": "1944",
+    "nationality": "Norwegian"
+  },
+  {
+    "id": "henri-matisse",
+    "name": "Henri Matisse",
+    "movementIds": ["fauvism"],
+    "bio": "French artist who led the Fauves in liberating color from descriptive function. Throughout his career, he pursued a radical simplification of form while maintaining extraordinary decorative power.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Henri_Matisse%2C_1913%2C_photograph_by_Alvin_Langdon_Coburn.jpg/440px-Henri_Matisse%2C_1913%2C_photograph_by_Alvin_Langdon_Coburn.jpg",
+    "born": "1869",
+    "died": "1954",
+    "nationality": "French"
+  },
+  {
+    "id": "egon-schiele",
+    "name": "Egon Schiele",
+    "movementIds": ["expressionism"],
+    "bio": "Austrian Expressionist known for raw, distorted figure drawings and intense self-portraits that explore sexuality, mortality, and psychological vulnerability.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Egon_Schiele_photo.jpg/440px-Egon_Schiele_photo.jpg",
+    "born": "1890",
+    "died": "1918",
+    "nationality": "Austrian"
+  },
+  {
+    "id": "ernst-ludwig-kirchner",
+    "name": "Ernst Ludwig Kirchner",
+    "movementIds": ["expressionism"],
+    "bio": "German Expressionist painter and co-founder of Die Brücke. His jagged forms and acid colors depict the frenetic alienation of modern city life.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Kirchner_1919_portrait.jpg/440px-Kirchner_1919_portrait.jpg",
+    "born": "1880",
+    "died": "1938",
+    "nationality": "German"
+  },
+  {
+    "id": "emil-nolde",
+    "name": "Emil Nolde",
+    "movementIds": ["expressionism"],
+    "bio": "German-Danish Expressionist famous for vibrant watercolors and thick, vivid brushwork. His paintings of masks and religious ecstasy convey primal emotional force.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Emil_Nolde_%28Minya_Diez-Dührkoop%29.jpg/440px-Emil_Nolde_%28Minya_Diez-Dührkoop%29.jpg",
+    "born": "1867",
+    "died": "1956",
+    "nationality": "German-Danish"
+  },
+  {
+    "id": "wassily-kandinsky",
+    "name": "Wassily Kandinsky",
+    "movementIds": ["expressionism"],
+    "bio": "Russian painter and art theorist who pioneered abstract art. He believed that colors and forms could express inner spiritual states without representing the visible world.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Vassily-Kandinsky.jpeg/440px-Vassily-Kandinsky.jpeg",
+    "born": "1866",
+    "died": "1944",
+    "nationality": "Russian"
+  },
+  {
+    "id": "pablo-picasso",
+    "name": "Pablo Picasso",
+    "movementIds": ["cubism"],
+    "bio": "Spanish painter, sculptor, and printmaker who co-founded Cubism and became the most dominant artist of the 20th century. His relentless experimentation produced an enormous and varied body of work.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Portrait_de_Picasso%2C_1908.jpg/440px-Portrait_de_Picasso%2C_1908.jpg",
+    "born": "1881",
+    "died": "1973",
+    "nationality": "Spanish"
+  },
+  {
+    "id": "constantin-brancusi",
+    "name": "Constantin Brancusi",
+    "movementIds": ["cubism"],
+    "bio": "Romanian sculptor who reduced forms to their essential shapes, creating elegantly simplified sculptures that bridge Cubism and pure abstraction.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Edward_Steichen_-_Brancusi.jpg/440px-Edward_Steichen_-_Brancusi.jpg",
+    "born": "1876",
+    "died": "1957",
+    "nationality": "Romanian"
+  },
+  {
+    "id": "giacomo-balla",
+    "name": "Giacomo Balla",
+    "movementIds": ["futurism"],
+    "bio": "Italian Futurist painter who decomposed motion into sequential phases, influenced by chronophotography. His work embodies the Futurist obsession with speed and dynamism.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Giacomo_Balla.jpg/440px-Giacomo_Balla.jpg",
+    "born": "1871",
+    "died": "1958",
+    "nationality": "Italian"
+  },
+  {
+    "id": "umberto-boccioni",
+    "name": "Umberto Boccioni",
+    "movementIds": ["futurism"],
+    "bio": "Italian painter and sculptor who was the principal theorist of Futurism. His dynamic compositions and landmark sculpture Unique Forms of Continuity in Space define the movement's visual language.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Umberto_Boccioni_photo.jpg/440px-Umberto_Boccioni_photo.jpg",
+    "born": "1882",
+    "died": "1916",
+    "nationality": "Italian"
+  },
+  {
+    "id": "luigi-russolo",
+    "name": "Luigi Russolo",
+    "movementIds": ["futurism"],
+    "bio": "Italian Futurist painter and composer who created the Art of Noises manifesto, pioneering noise music and expanding artistic expression beyond the visual into the sonic realm.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Russolo%2C_1916.jpg/440px-Russolo%2C_1916.jpg",
+    "born": "1885",
+    "died": "1947",
+    "nationality": "Italian"
+  },
+  {
+    "id": "marcel-duchamp",
+    "name": "Marcel Duchamp",
+    "movementIds": ["dada"],
+    "bio": "French-American artist who challenged the very definition of art through readymades and conceptual provocations. His Fountain (1917) remains one of the most consequential gestures in modern art.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Marcel_Duchamp_01.jpg/440px-Marcel_Duchamp_01.jpg",
+    "born": "1887",
+    "died": "1968",
+    "nationality": "French-American"
+  },
+  {
+    "id": "gustave-moreau",
+    "name": "Gustave Moreau",
+    "movementIds": ["symbolism"],
+    "bio": "French Symbolist painter known for his mystical and highly decorative works depicting mythological and religious subjects. His art is characterized by a dreamlike, ornate style.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Edgar_Degas_-_Portrait_of_Gustave_Moreau.jpg/440px-Edgar_Degas_-_Portrait_of_Gustave_Moreau.jpg",
+    "born": "1826",
+    "died": "1898",
+    "nationality": "French"
+  },
+  {
+    "id": "odilon-redon",
+    "name": "Odilon Redon",
+    "bio": "French Symbolist painter, printmaker, and draftsman. His early 'noirs'—charcoal drawings and lithographs—are famous for their bizarre, surreal, and dreamlike imagery.",
+    "movementIds": ["symbolism"],
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Odilon_Redon_1880.jpg/440px-Odilon_Redon_1880.jpg",
+    "born": "1840",
+    "died": "1916",
+    "nationality": "French"
+  },
+  {
+    "id": "gustav-klimt",
+    "name": "Gustav Klimt",
+    "movementIds": ["symbolism"],
+    "bio": "Austrian Symbolist painter and a prominent member of the Vienna Secession movement. He is noted for his highly decorative, often eroticized paintings and murals.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Gustav_Klimt_1914.jpg/440px-Gustav_Klimt_1914.jpg",
+    "born": "1862",
+    "died": "1918",
+    "nationality": "Austrian"
+  }
+]

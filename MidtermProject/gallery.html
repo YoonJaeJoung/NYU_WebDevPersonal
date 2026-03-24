@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Gallery — Modern Art Library</title>
+	<meta name="description"
+		content="Browse artworks across modern art movements. Filter by movement, artist, or museum." />
+	<link rel="stylesheet" href="assets/css/base.css" />
+	<link rel="stylesheet" href="assets/css/components.css" />
+	<link rel="stylesheet" href="assets/css/layout.css" />
+	<link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+
+<body>
+	<header class="top-nav" id="top">
+		<a class="nav-title" href="index.html">Modern Art Library</a>
+		<button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"
+			aria-label="Open menu"><span class="icon-open" aria-hidden="true">☰</span><span class="icon-close"
+				aria-hidden="true">✕</span></button>
+		<nav class="nav-links" id="main-nav" aria-label="Main navigation">
+			<a href="index.html">Movements</a>
+			<a href="artists.html">Artists</a>
+			<a href="museums.html">Museums</a>
+			<a href="gallery.html">Artworks</a>
+			<a href="about.html">About</a>
+		</nav>
+	</header>
+
+	<div class="gallery-layout">
+		<main class="gallery-main">
+			<h1 class="section-heading" id="gallery-title">All Artworks</h1>
+			<p class="section-subheading" id="gallery-subtitle">Explore representative artworks across 14 modern art
+				movements.</p>
+			<div class="gallery-grid" id="gallery-grid">
+				<!-- Populated by JS -->
+			</div>
+		</main>
+	</div>
+
+	<script src="assets/js/nav.js"></script>
+	<script>
+		(function () {
+
+			var BASE = 'assets/data/';
+
+			Promise.all([
+				fetch(BASE + 'movements.json').then(function (r) { return r.json(); }),
+				fetch(BASE + 'artworks.json').then(function (r) { return r.json(); }),
+				fetch(BASE + 'artists.json').then(function (r) { return r.json(); })
+			]).then(function (data) {
+				var movements = data[0];
+				var allArtworks = data[1];
+				var allArtists = data[2];
+
+				var grid = document.getElementById('gallery-grid');
+				grid.innerHTML = '';
+
+				if (allArtworks.length === 0) {
+					grid.innerHTML = '<p style="color:#888;padding:2rem;grid-column:1/-1;">No artworks available.</p>';
+					return;
+				}
+
+				allArtworks.forEach(function (artwork) {
+					var artist = allArtists.find(function (a) { return a.id === artwork.artistId; });
+					var movement = movements.find(function (m) { return m.id === artwork.movementId; });
+					var artistName = artist ? artist.name : '';
+					var movColor = movement ? movement.color : '#333';
+					var detailUrl = 'artworks/artwork.html?id=' + artwork.id;
+					var artistUrl = 'artists/artist.html?id=' + artwork.artistId;
+
+					var card = document.createElement('div');
+					card.className = 'art-card';
+					card.style.setProperty('--page-color', movColor);
+					card.style.background = movColor;
+
+					card.innerHTML =
+						'<div class="art-card__info">' +
+						'<div class="art-card__title">' + escapeHtml(artwork.title) + '</div>' +
+						'<div class="art-card__artist">' + escapeHtml(artistName) + '</div>' +
+						'<div class="art-card__medium">' + escapeHtml(artwork.medium || '') + '</div>' +
+						'<div class="art-card__year">' + escapeHtml(artwork.year) + '</div>' +
+						'</div>' +
+						'<img class="art-card__image" src="' + artwork.imageUrl + '" alt="' + escapeHtml(artwork.title) + '" loading="lazy">' +
+						'<a class="art-card__mobile-browse" href="' + artistUrl + '">Learn more about ' + escapeHtml(artistName) + ' →</a>' +
+						'<a class="art-card__mobile-detail" href="' + detailUrl + '">View Details →</a>' +
+						'<div class="art-card__overlay">' +
+						'<div class="art-card__overlay-info">' +
+						'<div class="art-card__title">' + escapeHtml(artwork.title) + '</div>' +
+						'<div class="art-card__artist">' + escapeHtml(artistName) + '</div>' +
+						'<div class="art-card__medium">' + escapeHtml(artwork.medium || '') + '</div>' +
+						'<div class="art-card__year">' + escapeHtml(artwork.year) + '</div>' +
+						'</div>' +
+						'<div class="art-card__overlay-spacer"></div>' +
+						'<a class="art-card__overlay-browse" href="' + artistUrl + '">Learn more about ' + escapeHtml(artistName) + ' →</a>' +
+						'<a class="art-card__overlay-detail" href="' + detailUrl + '">View Details →</a>' +
+						'</div>';
+
+					card.addEventListener('click', function (e) {
+						if (!e.target.closest('a')) {
+							window.location.href = detailUrl;
+						}
+					});
+
+					grid.appendChild(card);
+				});
+			});
+
+			function escapeHtml(str) {
+				var div = document.createElement('div');
+				div.textContent = str || '';
+				return div.innerHTML;
+			}
+		})();
+	</script>
+</body>
+
+</html>

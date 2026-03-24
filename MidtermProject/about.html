@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>About — Modern Art Library</title>
+	<meta name="description" content="About Modern Art Library — a class project website for NYU Web Development." />
+	<link rel="stylesheet" href="assets/css/base.css" />
+	<link rel="stylesheet" href="assets/css/components.css" />
+	<link rel="stylesheet" href="assets/css/layout.css" />
+	<link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+
+<body>
+	<header class="top-nav" id="top">
+		<a class="nav-title" href="index.html">Modern Art Library</a>
+		<button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"
+			aria-label="Open menu"><span class="icon-open" aria-hidden="true">☰</span><span class="icon-close"
+				aria-hidden="true">✕</span></button>
+		<nav class="nav-links" id="main-nav" aria-label="Main navigation">
+			<a href="index.html">Movements</a>
+			<a href="artists.html">Artists</a>
+			<a href="museums.html">Museums</a>
+			<a href="gallery.html">Artworks</a>
+			<a href="about.html">About</a>
+		</nav>
+	</header>
+
+	<div class="page-header">
+		<h1 class="page-header__title">About</h1>
+		<p class="page-header__subtitle">Modern Art Library — a class project for NYU Web Development</p>
+	</div>
+
+	<div class="about-content">
+		<h2>What is Modern Art Library?</h2>
+		<p>
+			Modern Art Library is a class project website for NYU Web Development (Midterm + Final).
+			This site introduces modern art movements, key artists, and representative artworks,
+			based on content from a modern art course. It also serves as a practical guide for
+			visiting museums in NYC.
+		</p>
+
+		<h2>Core Idea</h2>
+		<p>The website is designed to help users:</p>
+		<ul>
+			<li>Compare major modern art movements</li>
+			<li>Discover important artworks and artists in each movement</li>
+			<li>Understand how one movement shifts into the next</li>
+			<li>Use the site as a practical guide for seeing artworks in NYC museums</li>
+		</ul>
+
+		<h2>Site Structure</h2>
+		<ul>
+			<li><strong>Landing page</strong> — Visual overview of 14 movements as a book stack</li>
+			<li><strong>Movement pages</strong> — Details for each movement, key artists, and works</li>
+			<li><strong>Artists page</strong> — Grid of all key artists with biographies</li>
+			<li><strong>Gallery</strong> — Filterable artwork grid (by movement, artist)</li>
+			<li><strong>Museums</strong> — NYC and world museums housing these masterpieces</li>
+			<li><strong>Compare</strong> — Side-by-side movement comparison</li>
+		</ul>
+
+		<h2>Technical Approach</h2>
+		<ul>
+			<li>Semantic HTML5 structure</li>
+			<li>Shared CSS design system (base, components, layout, responsive)</li>
+			<li>Vanilla JavaScript for interactivity — no frameworks</li>
+			<li>JSON data files for movements, artists, artworks, and museums</li>
+			<li>Responsive design with mobile-first media queries</li>
+		</ul>
+
+		<h2>Content Source</h2>
+		<p>
+			Content is sourced from materials in NYU CAS Modern Art course.
+			Visual layout inspiration comes from curated references on
+			<a href="https://pin.it/VL7v5UgZl" target="_blank" rel="noopener">Pinterest</a>.
+		</p>
+
+		<h2>Planning Documents</h2>
+		<ul>
+			<li><a href="proposal/Proposal.md">Project proposal</a></li>
+			<li><a href="proposal/sitemap.pdf">Sitemap</a></li>
+			<li><a href="proposal/wireframe.pdf">Wireframe</a></li>
+		</ul>
+	</div>
+
+	<script src="assets/js/nav.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Artists — Modern Art Library</title>
+	<meta name="description" content="Discover the key artists of modern art movements, from Baroque masters to Dada provocateurs." />
+	<link rel="stylesheet" href="assets/css/base.css" />
+	<link rel="stylesheet" href="assets/css/components.css" />
+	<link rel="stylesheet" href="assets/css/layout.css" />
+	<link rel="stylesheet" href="assets/css/responsive.css" />
+	<link rel="stylesheet" href="assets/css/book-stack.css" />
+</head>
+
+<body class="shelf-page">
+	<header class="top-nav" id="top">
+		<a class="nav-title" href="index.html">Modern Art Library</a>
+		<button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"
+			aria-label="Open menu"><span class="icon-open" aria-hidden="true">☰</span><span class="icon-close"
+				aria-hidden="true">✕</span></button>
+		<nav class="nav-links" id="main-nav" aria-label="Main navigation">
+			<a href="index.html">Movements</a>
+			<a href="artists.html">Artists</a>
+			<a href="museums.html">Museums</a>
+			<a href="gallery.html">Artworks</a>
+			<a href="about.html">About</a>
+		</nav>
+	</header>
+
+	<aside class="info-left" aria-live="polite">
+		<span class="info-movement" id="info-movement">Artist Name</span>
+		<span class="info-years" id="info-years">Life Years</span>
+		<span class="info-hint" id="info-hint">Hover on the book to see artist details. Click to explore their works.</span>
+	</aside>
+
+	<aside class="info-right" aria-live="polite" id="info-artists">
+		<span class="artist">Movements</span>
+	</aside>
+
+	<div class="stage">
+		<main id="book-stack" aria-label="Artists bookshelf">
+			<!-- Populated by JS -->
+		</main>
+	</div>
+
+	<script src="assets/js/nav.js"></script>
+	<script>
+		(function () {
+			var BASE = 'assets/data/';
+			var bodyEl = document.body;
+			var books = [];
+			var movementEl = document.getElementById('info-movement');
+			var yearsEl = document.getElementById('info-years');
+			var artistsEl = document.getElementById('info-artists');
+			var hintEl = document.getElementById('info-hint');
+
+			Promise.all([
+				fetch(BASE + 'artists.json').then(function (r) { return r.json(); }),
+				fetch(BASE + 'movements.json').then(function (r) { return r.json(); })
+			]).then(function (data) {
+				var artists = data[0];
+				var movements = data[1];
+				var stack = document.getElementById('book-stack');
+
+				// Sort by born year
+				artists.sort(function (a, b) {
+					return parseInt(a.born) - parseInt(b.born);
+				});
+
+				artists.forEach(function (artist) {
+					var movementColors = artist.movementIds.map(function (mid) {
+						var m = movements.find(function (mv) { return mv.id === mid; });
+						return m ? m.color : '#888';
+					});
+					var movementNames = artist.movementIds.map(function (mid) {
+						var m = movements.find(function (mv) { return mv.id === mid; });
+						return m ? m.name : '';
+					}).filter(Boolean);
+
+					var hoverBg;
+					if (movementColors.length === 1) {
+						hoverBg = movementColors[0];
+					} else {
+						hoverBg = 'linear-gradient(to right, ' + movementColors.join(', ') + ')';
+					}
+
+					var lifespan = parseInt(artist.died) - parseInt(artist.born);
+					var scaledLifespan = lifespan * 0.7; // Reduce height by 30%
+
+					var book = document.createElement('a');
+					book.className = 'book';
+					book.href = 'artists/artist.html?id=' + artist.id;
+					book.style.setProperty('--years', scaledLifespan);
+					book.dataset.movement = artist.name;
+					book.dataset.years = artist.born + '     -     ' + artist.died;
+					book.dataset.artists = movementNames.join('|');
+					book.dataset.hoverBg = hoverBg;
+					book.innerHTML = '<span class="book-title">' + artist.name + '</span>';
+
+					book.addEventListener('mouseenter', function () { showDetails(book); });
+					book.addEventListener('focus', function () { showDetails(book); });
+					book.addEventListener('mouseleave', showPlaceholder);
+					book.addEventListener('blur', showPlaceholder);
+
+					stack.appendChild(book);
+				});
+
+				books = document.querySelectorAll('.book');
+				showPlaceholder();
+			});
+
+			function showPlaceholder() {
+				bodyEl.classList.remove('is-hovering');
+				if (books.length) books.forEach(function (b) { b.classList.remove('is-active'); b.style.background = ''; });
+				movementEl.textContent = 'Artist Name';
+				yearsEl.textContent = 'Life Years';
+				hintEl.textContent = 'Hover on the book to see artist details and affiliated movements. Click to explore their works.';
+				hintEl.style.display = 'block';
+				artistsEl.innerHTML = '<span class="artist">Movements</span>';
+			}
+
+			function showDetails(book) {
+				bodyEl.classList.add('is-hovering');
+				books.forEach(function (b) { b.classList.remove('is-active'); b.style.background = ''; });
+				book.classList.add('is-active');
+				book.style.background = book.dataset.hoverBg;
+
+				movementEl.textContent = book.dataset.movement || 'Artist Name';
+				yearsEl.textContent = book.dataset.years || 'Life Years';
+				hintEl.style.display = 'none';
+
+				var movNames = (book.dataset.artists || '').split('|').filter(Boolean);
+				artistsEl.innerHTML = movNames
+					.map(function (name) { return '<span class="artist">' + name + '</span>'; })
+					.join('');
+			}
+		})();
+	</script>
+</body>
+
+</html>

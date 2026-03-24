@@ -1,0 +1,285 @@
+/* ===== MOVEMENT DETAIL PAGE – SPLIT LAYOUT ===== */
+.movement-page {
+	display: flex;
+	min-height: 100vh;
+}
+
+.movement-page__left {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 50%;
+	height: 100vh;
+	padding: 6rem var(--content-gutter) 2.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: #ffffff;
+	z-index: 10;
+}
+
+.movement-page__right {
+	margin-left: 50%;
+	width: 50%;
+	min-height: 100vh;
+	padding: 6rem var(--content-gutter) 2.5rem;
+	background: #f5f5f5;
+}
+
+.movement-page__name {
+	font-size: clamp(2.2rem, 4vw, 3.4rem);
+	font-weight: 700;
+	line-height: 1.08;
+	margin-bottom: 0.6rem;
+}
+
+.movement-page__period {
+	font-size: 1.05rem;
+	opacity: 0.85;
+	letter-spacing: 0.05em;
+	margin-bottom: 1.6rem;
+}
+
+.movement-page__desc {
+	font-size: 1rem;
+	line-height: 1.65;
+	max-width: 50ch;
+	margin-bottom: 1rem;
+	opacity: 0.92;
+}
+
+.movement-page__cta {
+	margin-top: auto;
+	padding-top: 2rem;
+}
+
+/* ===== ARTWORK DETAIL PAGE ===== */
+.artwork-detail__left {
+	background: #ffffff !important;
+	color: #111111 !important;
+}
+
+.artwork-detail__right {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+}
+
+.artwork-detail__full-image {
+	max-width: 100%;
+	max-height: calc(100vh - 8rem);
+	object-fit: contain;
+	display: block;
+	border-radius: 4px;
+}
+
+.artwork-detail__image-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	min-height: 50vh;
+}
+
+@media (min-width: 769px) {
+	.artwork-detail__image-wrap {
+		margin-top: 3rem; /* visually center without nav bar height */
+	}
+}
+
+/* Outline dark button for artwork detail */
+.btn--outline-dark {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	background: transparent;
+	color: #333;
+	border: 1.5px solid #ccc;
+	padding: 0.6rem 1.2rem;
+	border-radius: 3px;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 0.9rem;
+	text-decoration: none;
+	cursor: pointer;
+	transition: background 160ms ease, color 160ms ease, border-color 160ms ease;
+}
+
+.btn--outline-dark:hover {
+	background: var(--page-color);
+	color: #ffffff;
+	border-color: var(--page-color);
+}
+
+.btn--outline-dark .material-symbols-outlined {
+	font-size: 1.1rem;
+}
+
+/* ===== ARTWORK GRID (movement detail right panel) ===== */
+.artwork-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1.2rem;
+}
+
+/* ===== GALLERY PAGE LAYOUT ===== */
+.gallery-layout {
+	display: flex;
+	min-height: 100vh;
+	padding-top: 5rem;
+}
+
+.gallery-sidebar {
+	width: 260px;
+	flex-shrink: 0;
+	padding: 1.5rem var(--content-gutter);
+	border-right: 1px solid #e0e0e0;
+	background: #fafafa;
+	overflow-y: auto;
+	position: sticky;
+	top: 5rem;
+	height: calc(100vh - 5rem);
+}
+
+.gallery-main {
+	flex: 1;
+	padding: 1.5rem var(--content-gutter);
+}
+
+.gallery-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+	gap: 1.4rem;
+}
+
+/* ===== PAGE GRID (artists, museums) ===== */
+.page-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 1.6rem;
+	padding-top: 5.5rem;
+	padding-left: var(--content-gutter);
+	padding-right: var(--content-gutter);
+	padding-bottom: 3rem;
+}
+
+/* ===== PAGE HEADER (for inner pages) ===== */
+.page-header {
+	padding: 6.5rem var(--content-gutter) 2rem;
+	background: var(--page-color);
+	color: #ffffff;
+}
+
+.page-header__title {
+	font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+	font-weight: 700;
+	margin-bottom: 0.4rem;
+}
+
+.page-header__subtitle {
+	font-size: 1rem;
+	opacity: 0.85;
+	max-width: 60ch;
+	line-height: 1.5;
+}
+
+/* ===== COMPARE PAGE ===== */
+.compare-layout {
+	display: flex;
+	gap: 2rem;
+	padding: 1.5rem var(--content-gutter);
+	min-height: calc(100vh - 12rem);
+}
+
+.compare-panel {
+	flex: 1;
+	background: #ffffff;
+	border-radius: 8px;
+	padding: 1.5rem;
+	box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.compare-select {
+	width: 100%;
+	padding: 0.6rem 0.8rem;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 1rem;
+	border: 1.5px solid #ddd;
+	border-radius: 4px;
+	margin-bottom: 1.2rem;
+	background: #fff;
+	color: #333;
+}
+
+.compare-color-bar {
+	height: 6px;
+	border-radius: 3px;
+	margin-bottom: 1rem;
+}
+
+.compare-name {
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin-bottom: 0.3rem;
+}
+
+.compare-period {
+	font-size: 0.92rem;
+	color: #666;
+	margin-bottom: 1rem;
+}
+
+.compare-desc {
+	font-size: 0.92rem;
+	line-height: 1.6;
+	color: #444;
+	margin-bottom: 0.8rem;
+}
+
+.compare-artists-title {
+	font-size: 0.85rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	color: #888;
+	margin-top: 1rem;
+	margin-bottom: 0.4rem;
+}
+
+.compare-artist {
+	font-size: 0.9rem;
+	padding: 0.15rem 0;
+	color: #555;
+}
+
+/* ===== ABOUT PAGE ===== */
+.about-content {
+	max-width: 720px;
+	margin: 0 auto;
+	padding: 2rem var(--content-gutter) 3rem;
+	color: #333;
+}
+
+.about-content h2 {
+	font-size: 1.3rem;
+	margin-top: 2rem;
+	margin-bottom: 0.6rem;
+	color: var(--brand-color);
+}
+
+.about-content p,
+.about-content li {
+	font-size: 0.95rem;
+	line-height: 1.65;
+	margin-bottom: 0.6rem;
+}
+
+.about-content ul {
+	padding-left: 1.2rem;
+	margin-bottom: 1rem;
+}
+
+.about-content a {
+	color: var(--brand-color);
+	text-decoration: underline;
+}

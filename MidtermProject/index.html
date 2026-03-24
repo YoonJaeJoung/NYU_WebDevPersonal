@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Modern Art Library</title>
+	<link rel="stylesheet" href="assets/css/base.css" />
+	<link rel="stylesheet" href="assets/css/components.css" />
+	<link rel="stylesheet" href="assets/css/layout.css" />
+	<link rel="stylesheet" href="assets/css/responsive.css" />
+	<link rel="stylesheet" href="assets/css/book-stack.css" />
+</head>
+
+<body class="index-page">
+	<header class="top-nav" id="top">
+		<a class="nav-title" href="index.html">Modern Art Library</a>
+		<button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"
+			aria-label="Open menu"><span class="icon-open" aria-hidden="true">☰</span><span class="icon-close"
+				aria-hidden="true">✕</span></button>
+		<nav class="nav-links" id="main-nav" aria-label="Main navigation">
+			<a href="index.html">Movements</a>
+			<a href="artists.html">Artists</a>
+			<a href="museums.html">Museums</a>
+			<a href="gallery.html">Artworks</a>
+			<a href="about.html">About</a>
+		</nav>
+	</header>
+
+	<aside class="info-left" aria-live="polite">
+		<span class="info-movement" id="info-movement">Movement Name</span>
+		<span class="info-years" id="info-years">Year</span>
+		<span class="info-hint" id="info-hint">Hover on the book to see detail and corresponding artist names</span>
+	</aside>
+
+	<aside class="info-right" aria-live="polite" id="info-artists">
+		<span class="artist">Famous Artists</span>
+	</aside>
+
+	<div class="stage">
+		<main id="book-stack" aria-label="Modern art movements">
+			<a class="book" style="--years: 150" data-movement="Baroque" data-years="1600     -     1750"
+				data-artists="Nicolas Poussin|Peter Paul Rubens" href="movements/movement.html?id=baroque"><span
+					class="book-title">Baroque</span></a>
+			<a class="book" style="--years: 50" data-movement="Rococo" data-years="1730     -     1780"
+				data-artists="Jean-Antoine Watteau" href="movements/movement.html?id=rococo"><span class="book-title">Rococo</span></a>
+			<a class="book" style="--years: 70" data-movement="Neoclassicism" data-years="1760     -     1830"
+				data-artists="Jacques-Louis David|J.-A.-D. Ingres|Benjamin West|Girodet"
+				href="movements/movement.html?id=neoclassicism"><span class="book-title">Neoclassicism</span></a>
+			<a class="book" style="--years: 60" data-movement="Romanticism" data-years="1790     -     1850"
+				data-artists="Francisco Goya|Théodore Géricault|Eugène Delacroix|J. M. W. Turner|Caspar David Friedrich"
+				href="movements/movement.html?id=romanticism"><span class="book-title">Romanticism</span></a>
+			<a class="book" style="--years: 40" data-movement="Realism" data-years="1840     -     1880"
+				data-artists="Gustave Courbet|Honoré Daumier|Édouard Manet" href="movements/movement.html?id=realism"><span
+					class="book-title">Realism</span></a>
+			<a class="book" style="--years: 30" data-movement="Impressionism" data-years="1860     -     1890"
+				data-artists="Claude Monet" href="movements/movement.html?id=impressionism"><span
+					class="book-title">Impressionism</span></a>
+			<a class="book" style="--years: 21" data-movement="Neo-Impressionism" data-years="1884     -     1905"
+				data-artists="Georges Seurat|Paul Signac" href="movements/movement.html?id=neo-impressionism"><span
+					class="book-title">Neo-Impressionism</span></a>
+			<a class="book" style="--years: 19" data-movement="Post-Impressionism" data-years="1886     -     1905"
+				data-artists="Paul Cézanne|Vincent van Gogh|Paul Gauguin" href="movements/movement.html?id=post-impressionism"><span
+					class="book-title">Post-Impressionism</span></a>
+			<a class="book" style="--years: 30" data-movement="Symbolism" data-years="1880     -     1910"
+				data-artists="Paul Gauguin|Edvard Munch" href="movements/movement.html?id=symbolism"><span
+					class="book-title">Symbolism</span></a>
+			<a class="book" style="--years: 5" data-movement="Fauvism" data-years="1905     -     1910"
+				data-artists="Henri Matisse" href="movements/movement.html?id=fauvism"><span class="book-title">Fauvism</span></a>
+			<a class="book" style="--years: 20" data-movement="Expressionism" data-years="1905     -     1925"
+				data-artists="Edvard Munch|Egon Schiele|Ernst Ludwig Kirchner|Emil Nolde|Wassily Kandinsky"
+				href="movements/movement.html?id=expressionism"><span class="book-title">Expressionism</span></a>
+			<a class="book" style="--years: 13" data-movement="Cubism" data-years="1907     -     1920"
+				data-artists="Pablo Picasso|Constantin Brancusi" href="movements/movement.html?id=cubism"><span
+					class="book-title">Cubism</span></a>
+			<a class="book" style="--years: 7" data-movement="Futurism" data-years="1909     -     1916"
+				data-artists="Giacomo Balla|Umberto Boccioni|Luigi Russolo" href="movements/movement.html?id=futurism"><span
+					class="book-title">Futurism</span></a>
+			<a class="book" style="--years: 8" data-movement="Dada" data-years="1916     -     1924"
+				data-artists="Marcel Duchamp" href="movements/movement.html?id=dada"><span class="book-title">Dada</span></a>
+		</main>
+	</div>
+
+	<script>
+		const bodyEl = document.body;
+		const books = document.querySelectorAll('.book');
+		const topNavEl = document.getElementById('top');
+		const menuToggleEl = document.getElementById('menu-toggle');
+		const navLinkEls = document.querySelectorAll('.nav-links a');
+		const movementEl = document.getElementById('info-movement');
+		const yearsEl = document.getElementById('info-years');
+		const artistsEl = document.getElementById('info-artists');
+		const hintEl = document.getElementById('info-hint');
+
+		function closeMenu() {
+			topNavEl.classList.remove('is-menu-open');
+			bodyEl.classList.remove('is-menu-open');
+			menuToggleEl.setAttribute('aria-expanded', 'false');
+			menuToggleEl.setAttribute('aria-label', 'Open menu');
+		}
+
+		function toggleMenu() {
+			const willOpen = !topNavEl.classList.contains('is-menu-open');
+			topNavEl.classList.toggle('is-menu-open', willOpen);
+			bodyEl.classList.toggle('is-menu-open', willOpen);
+			menuToggleEl.setAttribute('aria-expanded', String(willOpen));
+			menuToggleEl.setAttribute('aria-label', willOpen ? 'Close menu' : 'Open menu');
+		}
+
+		function showPlaceholder() {
+			bodyEl.classList.remove('is-hovering');
+			books.forEach((item) => item.classList.remove('is-active'));
+			movementEl.textContent = 'Movement Name';
+			yearsEl.textContent = 'Year';
+			hintEl.textContent = 'Hover on the book to see detail and corresponding artist names. Click to browse artworks of the movement.';
+			hintEl.style.display = 'block';
+			artistsEl.innerHTML = '<span class="artist">Famous Artists</span>';
+		}
+
+		function showDetails(book) {
+			bodyEl.classList.add('is-hovering');
+			books.forEach((item) => item.classList.remove('is-active'));
+			book.classList.add('is-active');
+			const movement = book.dataset.movement || 'Movement Name';
+			const years = book.dataset.years || 'Year';
+			const artists = (book.dataset.artists || '').split('|').filter(Boolean);
+
+			movementEl.textContent = movement;
+			yearsEl.textContent = years;
+			hintEl.style.display = 'none';
+
+			artistsEl.innerHTML = artists
+				.map((name) => `<span class="artist">${name}</span>`)
+				.join('');
+		}
+
+		books.forEach((book) => {
+			book.addEventListener('mouseenter', () => showDetails(book));
+			book.addEventListener('focus', () => showDetails(book));
+			book.addEventListener('mouseleave', showPlaceholder);
+			book.addEventListener('blur', showPlaceholder);
+		});
+
+		menuToggleEl.addEventListener('click', toggleMenu);
+
+		navLinkEls.forEach((link) => {
+			link.addEventListener('click', closeMenu);
+		});
+
+		document.addEventListener('click', (event) => {
+			if (!topNavEl.contains(event.target)) {
+				closeMenu();
+			}
+		});
+
+		window.addEventListener('resize', () => {
+			if (window.innerWidth > 800) {
+				closeMenu();
+			}
+		});
+
+		showPlaceholder();
+	</script>
+</body>
+
+</html>

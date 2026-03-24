@@ -1,0 +1,218 @@
+[
+  {
+    "id": "met",
+    "name": "The Metropolitan Museum of Art",
+    "description": "One of the world's largest and most comprehensive art museums. The Met's collection spans 5,000 years and includes masterpieces from every major movement in Western art, from ancient Egypt to contemporary installations.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Metropolitan_Museum_of_Art_%28The_Met%29_-_Central_Park%2C_NYC.jpg/600px-Metropolitan_Museum_of_Art_%28The_Met%29_-_Central_Park%2C_NYC.jpg",
+    "address": "1000 Fifth Avenue, New York, NY 10028",
+    "website": "https://www.metmuseum.org",
+    "highlights": ["European Paintings", "Modern and Contemporary Art", "Sculpture", "Asian Art"]
+  },
+  {
+    "id": "moma",
+    "name": "Museum of Modern Art (MoMA)",
+    "description": "A defining institution for modern and contemporary art, MoMA's collection includes iconic works from Impressionism through today. Its galleries house Van Gogh's Starry Night, Picasso's Les Demoiselles d'Avignon, and Monet's Water Lilies.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/MoMA_New_York_City_%282014%29.jpg/600px-MoMA_New_York_City_%282014%29.jpg",
+    "address": "11 West 53rd Street, New York, NY 10019",
+    "website": "https://www.moma.org",
+    "highlights": ["Post-Impressionism", "Cubism", "Abstract Expressionism", "Contemporary Art"]
+  },
+  {
+    "id": "guggenheim",
+    "name": "Solomon R. Guggenheim Museum",
+    "description": "Housed in Frank Lloyd Wright's iconic spiral building, the Guggenheim holds an outstanding collection of Impressionist, Post-Impressionist, early Modern European, and contemporary artworks.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/NYC_-_Guggenheim_Museum.jpg/600px-NYC_-_Guggenheim_Museum.jpg",
+    "address": "1071 Fifth Avenue, New York, NY 10128",
+    "website": "https://www.guggenheim.org",
+    "highlights": ["Impressionism", "Expressionism", "Abstractionism", "Kandinsky Collection"]
+  },
+  {
+    "id": "whitney",
+    "name": "Whitney Museum of American Art",
+    "description": "Dedicated to 20th- and 21st-century American art, the Whitney features paintings, sculptures, and new media by American artists, with a strong focus on living artists and contemporary movements.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Image_of_Whitney_Museum_of_American_Art.jpg/600px-Image_of_Whitney_Museum_of_American_Art.jpg",
+    "address": "99 Gansevoort Street, New York, NY 10014",
+    "website": "https://whitney.org",
+    "highlights": ["American Modernism", "Contemporary Art", "Biennial Exhibition"]
+  },
+  {
+    "id": "neue-galerie",
+    "name": "Neue Galerie New York",
+    "description": "Devoted to early twentieth-century German and Austrian art and design. The collection includes major works by Klimt, Schiele, Kandinsky, and other Expressionists.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Neue_Galerie_New_York.jpg/440px-Neue_Galerie_New_York.jpg",
+    "address": "1048 Fifth Avenue, New York, NY 10028",
+    "website": "https://www.neuegalerie.org",
+    "highlights": ["German Expressionism", "Austrian Expressionism", "Bauhaus", "Vienna Secession"]
+  },
+  {
+    "id": "frick",
+    "name": "The Frick Collection",
+    "description": "An intimate museum in a Gilded Age mansion housing Old Master paintings, European sculpture, and decorative arts. Highlights include works by Vermeer, Rembrandt, Bellini, and Turner.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/FrickNYHQ.jpg/600px-FrickNYHQ.jpg",
+    "address": "1 East 70th Street, New York, NY 10021",
+    "website": "https://www.frick.org",
+    "highlights": ["Old Masters", "Baroque", "Rococo", "Neoclassicism"]
+  },
+  {
+    "id": "louvre",
+    "name": "Musée du Louvre",
+    "description": "The world's largest art museum and historic monument in Paris. Home to the Mona Lisa, Venus de Milo, and an unparalleled collection spanning antiquity to the mid-19th century.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Louvre_Museum_Wikimedia_Commons.jpg/600px-Louvre_Museum_Wikimedia_Commons.jpg",
+    "address": "Rue de Rivoli, 75001 Paris, France",
+    "website": "https://www.louvre.fr",
+    "highlights": ["Renaissance", "Baroque", "Neoclassicism", "Romanticism"]
+  },
+  {
+    "id": "musee-dorsay",
+    "name": "Musée d'Orsay",
+    "description": "Housed in a former railway station in Paris, the Musée d'Orsay holds the world's foremost collection of Impressionist and Post-Impressionist masterpieces, alongside Realist and Art Nouveau works.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Mus%C3%A9e_d%27Orsay%2C_North-West_view%2C_Paris_7e_140402.jpg/600px-Mus%C3%A9e_d%27Orsay%2C_North-West_view%2C_Paris_7e_140402.jpg",
+    "address": "1 Rue de la Légion d'Honneur, 75007 Paris, France",
+    "website": "https://www.musee-orsay.fr",
+    "highlights": ["Impressionism", "Post-Impressionism", "Realism", "Art Nouveau"]
+  },
+  {
+    "id": "prado",
+    "name": "Museo del Prado",
+    "description": "Spain's national museum in Madrid, renowned for its collection of European art from the 12th to early 20th century, with masterpieces by Goya, Velázquez, El Greco, and Bosch.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Museo_del_Prado_2016_%2825185969599%29.jpg/600px-Museo_del_Prado_2016_%2825185969599%29.jpg",
+    "address": "Calle de Ruiz de Alarcón 23, 28014 Madrid, Spain",
+    "website": "https://www.museodelprado.es",
+    "highlights": ["Baroque", "Romanticism", "Spanish Masters"]
+  },
+  {
+    "id": "national-gallery-london",
+    "name": "The National Gallery",
+    "description": "Located in Trafalgar Square, London, the National Gallery houses over 2,300 Western European paintings from the mid-13th century to 1900, including works by Turner, Constable, and the Impressionists.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/National_Gallery_London_2013_March.jpg/600px-National_Gallery_London_2013_March.jpg",
+    "address": "Trafalgar Square, London WC2N 5DN, UK",
+    "website": "https://www.nationalgallery.org.uk",
+    "highlights": ["Renaissance", "Baroque", "Romanticism", "Impressionism"]
+  },
+  {
+    "id": "art-institute-chicago",
+    "name": "Art Institute of Chicago",
+    "description": "One of the oldest and largest art museums in the United States. It is renowned for its Impressionist and Post-Impressionist collection, including Seurat's A Sunday on La Grande Jatte and Grant Wood's American Gothic.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Art_Institute_of_Chicago_%2831513943061%29.jpg/600px-Art_Institute_of_Chicago_%2831513943061%29.jpg",
+    "address": "111 South Michigan Avenue, Chicago, IL 60603",
+    "website": "https://www.artic.edu",
+    "highlights": ["Impressionism", "Post-Impressionism", "American Art", "Modern Art"]
+  },
+  {
+    "id": "sfmoma",
+    "name": "San Francisco Museum of Modern Art (SFMOMA)",
+    "description": "One of the largest museums of modern and contemporary art in the United States. Its collection includes masterpieces by Henri Matisse, Frida Kahlo, and Andy Warhol.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/SFMOMA_2016.jpg/600px-SFMOMA_2016.jpg",
+    "address": "151 Third Street, San Francisco, CA 94103",
+    "website": "https://www.sfmoma.org",
+    "highlights": ["Global Modernism", "Contemporary Art", "Photography", "Media Arts"]
+  },
+  {
+    "id": "albright-knox",
+    "name": "Albright-Knox Art Gallery",
+    "description": "Located in Buffalo, New York, the Albright-Knox is one of the oldest public arts institutions in the US, known for its exceptional collection of modern and contemporary art, including Balla's Dynamism of a Dog on a Leash.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Albright-Knox_Art_Gallery_-_DSC01041.JPG/600px-Albright-Knox_Art_Gallery_-_DSC01041.JPG",
+    "address": "1285 Elmwood Avenue, Buffalo, NY 14222",
+    "website": "https://www.albrightknox.org",
+    "highlights": ["Abstract Expressionism", "Pop Art", "Contemporary Art"]
+  },
+  {
+    "id": "minneapolis-institute-of-art",
+    "name": "Minneapolis Institute of Art",
+    "description": "A major art museum in Minneapolis, home to more than 90,000 works of art representing 5,000 years of world history. It houses Poussin's Death of Germanicus.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Minneapolis_Institute_of_Arts_South_Facing.jpg/600px-Minneapolis_Institute_of_Arts_South_Facing.jpg",
+    "address": "2400 Third Avenue South, Minneapolis, MN 55404",
+    "website": "https://new.artsmia.org",
+    "highlights": ["European Art", "Asian Art", "African Art", "Decorative Arts"]
+  },
+  {
+    "id": "national-gallery-oslo",
+    "name": "National Gallery of Norway",
+    "description": "Part of the National Museum in Oslo, it holds Norway's largest collection of paintings, drawings, and sculptures, including Edvard Munch's The Scream.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Nasjonalgalleriet_Oslo_2013.jpg/600px-Nasjonalgalleriet_Oslo_2013.jpg",
+    "address": "Universitetsgata 13, 0164 Oslo, Norway",
+    "website": "https://www.nasjonalmuseet.no",
+    "highlights": ["Norwegian Art", "Munch Collection", "European Old Masters"]
+  },
+  {
+    "id": "reina-sofia",
+    "name": "Museo Nacional Centro de Arte Reina Sofía",
+    "description": "Spain's national museum of 20th-century art, located in Madrid. It is home to Picasso's anti-war masterpiece Guernica and significant works by Dalí and Miró.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Museo_Reina_Sofia_Madrid.jpg/600px-Museo_Reina_Sofia_Madrid.jpg",
+    "address": "Calle de Santa Isabel 52, 28012 Madrid, Spain",
+    "website": "https://www.museoreinasofia.es",
+    "highlights": ["Cubism", "Surrealism", "Modern Spanish Art"]
+  },
+  {
+    "id": "tretyakov-gallery",
+    "name": "State Tretyakov Gallery",
+    "description": "The foremost depository of Russian fine art in the world, located in Moscow. Its collection includes Kandinsky's Composition VII and iconic works from the Russian avant-garde.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Tretyakov_Gallery_Moscow.jpg/600px-Tretyakov_Gallery_Moscow.jpg",
+    "address": "Lavrushinsky Lane 10, Moscow, Russia",
+    "website": "https://www.tretyakovgallery.ru",
+    "highlights": ["Russian Avant-Garde", "Abstractionism", "Icon Painting"]
+  },
+  {
+    "id": "leopold-museum",
+    "name": "Leopold Museum",
+    "description": "Located in the Museumsquartier in Vienna, it houses one of the world's most important collections of modern Austrian art, featuring the largest Egon Schiele collection.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Leopold_Museum_Wien_Aug_2006.jpg/600px-Leopold_Museum_Wien_Aug_2006.jpg",
+    "address": "Museumsplatz 1, 1070 Vienna, Austria",
+    "website": "https://www.leopoldmuseum.org",
+    "highlights": ["Viennese Modernism", "Schiele Collection", "Klimt Collection"]
+  },
+  {
+    "id": "national-galleries-scotland",
+    "name": "National Galleries of Scotland",
+    "description": "Scotland's national collection of fine art, housed in several prominent buildings in Edinburgh. It includes Gauguin's Vision After the Sermon.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/National_Gallery_of_Scotland_Edinburgh.jpg/600px-National_Gallery_of_Scotland_Edinburgh.jpg",
+    "address": "The Mound, Edinburgh EH2 2EL, UK",
+    "website": "https://www.nationalgalleries.org",
+    "highlights": ["Scottish Art", "European Masterpieces", "Symbolism"]
+  },
+  {
+    "id": "villa-albani",
+    "name": "Villa Albani",
+    "description": "A villa in Rome built for Cardinal Alessandro Albani to house his collection of antiquities and art. It is famous for Mengs's Parnassus ceiling fresco.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Villa_Albani_Rome.jpg/600px-Villa_Albani_Rome.jpg",
+    "address": "Via Salaria 92, 00198 Rome, Italy",
+    "website": "https://www.fondazionetorlonia.org",
+    "highlights": ["Neoclassicism", "Classical Antiquities"]
+  },
+  {
+    "id": "various",
+    "name": "Various Collections",
+    "description": "Items in private collections or distributed across various institutions around the world.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Museum_icon.svg/600px-Museum_icon.svg.png",
+    "address": "Global",
+    "website": "#",
+    "highlights": ["Global Art Heritage"]
+  },
+  {
+    "id": "ago",
+    "name": "Art Gallery of Ontario (AGO)",
+    "description": "Located in Toronto, the AGO is one of the largest art museums in North America. Its collection includes over 90,000 works of art, with a strong focus on Canadian art and the Henry Moore Sculpture Centre.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Art_Gallery_of_Ontario_2.jpg/600px-Art_Gallery_of_Ontario_2.jpg",
+    "address": "317 Dundas Street West, Toronto, ON M5T 1G4, Canada",
+    "website": "https://ago.ca",
+    "highlights": ["Canadian Art", "Indigenous Art", "Modern Art"]
+  },
+  {
+    "id": "hamburger-kunsthalle",
+    "name": "Hamburger Kunsthalle",
+    "description": "One of the largest art museums in Germany, focusing on European art from the Middle Ages to the present day. It is famous for Caspar David Friedrich's Wanderer Above the Sea of Fog.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Hamburger_Kunsthalle_Exterior.jpg/600px-Hamburger_Kunsthalle_Exterior.jpg",
+    "address": "Glockengießerwall 5, 20095 Hamburg, Germany",
+    "website": "https://www.hamburger-kunsthalle.de",
+    "highlights": ["German Romanticism", "Old Masters", "Modern Art"]
+  },
+  {
+    "id": "national-gallery-canada",
+    "name": "National Gallery of Canada",
+    "description": "Canada's national art museum, located in Ottawa. It houses a comprehensive collection of Canadian, Indigenous, and European art, including West's Death of General Wolfe.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/National_Gallery_of_Canada_Ottawa.jpg/600px-National_Gallery_of_Canada_Ottawa.jpg",
+    "address": "380 Sussex Drive, Ottawa, ON K1N 9N4, Canada",
+    "website": "https://www.gallery.ca",
+    "highlights": ["Canadian Art", "Indigenous Art", "European Masters"]
+  }
+]

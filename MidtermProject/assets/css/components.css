@@ -1,0 +1,382 @@
+/* ===== TOP NAVIGATION ===== */
+.top-nav {
+	left: 0;
+	top: 0;
+	position: fixed;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	gap: 1rem;
+	padding: 1.45rem var(--content-gutter) 1.2rem;
+	z-index: 40;
+	background: var(--brand-color);
+}
+
+/* Movement detail page: opaque nav with white bottom border */
+.top-nav--movement {
+	border-bottom: 1px solid #ffffff;
+}
+
+.menu-toggle {
+	display: none;
+}
+
+.menu-toggle .icon-open {
+	transform: translateY(-0.1em);
+}
+
+.menu-toggle .icon-close {
+	display: none;
+}
+
+.top-nav.is-menu-open .menu-toggle .icon-open {
+	display: none;
+}
+
+.top-nav.is-menu-open .menu-toggle .icon-close {
+	display: inline-block;
+}
+
+/* ===== NAV TITLE (LOGO) ===== */
+.nav-title {
+	display: inline-flex;
+	align-items: center;
+	height: var(--nav-row-height);
+	line-height: 1;
+	margin: 0;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 1.15rem;
+	letter-spacing: 0.02em;
+	color: var(--brand-color);
+	background: #ffffff;
+	border: 1px solid #ffffff;
+	padding: 0 0.7rem;
+	border-radius: 2px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/* ===== NAV LINKS ===== */
+.nav-links {
+	display: flex;
+	align-items: stretch;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	gap: 0.85rem;
+}
+
+.nav-links a {
+	display: inline-flex;
+	align-items: center;
+	height: var(--nav-row-height);
+	line-height: 1;
+	color: var(--brand-color);
+	background: #ffffff;
+	border: 1px solid #ffffff;
+	padding: 0 0.7rem;
+	border-radius: 2px;
+	text-decoration: none;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 0.95rem;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+	background-color: var(--brand-color);
+	color: #ffffff;
+}
+
+/* ===== ART CARD (for movement detail & gallery) ===== */
+.art-card {
+	position: relative;
+	border-radius: 6px;
+	overflow: hidden;
+	cursor: pointer;
+	background: var(--page-color);
+	border: 2px solid var(--page-color);
+	min-height: 24rem;
+	max-height: calc(100vh - 4.5rem);
+	display: flex;
+	flex-direction: column;
+}
+
+.art-card__image {
+	width: 100%;
+	flex: 1 1 auto;
+	min-height: 0;
+	object-fit: contain;
+	display: block;
+	background: var(--page-color);
+}
+
+/* Info hidden by default on desktop – shown inside overlay */
+.art-card__info {
+	display: none;
+}
+
+.art-card__title {
+	font-size: 0.92rem;
+	font-weight: 600;
+	margin-bottom: 0.2rem;
+	line-height: 1.25;
+}
+
+.art-card__artist {
+	font-size: 0.82rem;
+	opacity: 0.8;
+}
+
+.art-card__medium {
+	font-size: 0.78rem;
+	opacity: 0.65;
+	margin-top: 0.1rem;
+}
+
+.art-card__year {
+	font-size: 0.78rem;
+	opacity: 0.6;
+	margin-top: 0.15rem;
+}
+
+/* ===== ART CARD HOVER OVERLAY ===== */
+.art-card__overlay {
+	position: absolute;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.65);
+	display: flex;
+	flex-direction: column;
+	padding: 1.2rem;
+	opacity: 0;
+	transition: opacity 220ms ease;
+	pointer-events: none;
+	color: #ffffff;
+}
+
+.art-card:hover .art-card__overlay {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+/* Overlay info block – top left */
+.art-card__overlay-info {
+	flex: 0 0 auto;
+}
+
+.art-card__overlay-info .art-card__title {
+	font-size: 1rem;
+	color: #ffffff;
+}
+
+.art-card__overlay-info .art-card__artist {
+	color: #ffffff;
+	opacity: 0.85;
+}
+
+.art-card__overlay-info .art-card__medium {
+	color: #ffffff;
+	opacity: 0.7;
+}
+
+.art-card__overlay-info .art-card__year {
+	color: #ffffff;
+	opacity: 0.65;
+}
+
+/* Spacer to push buttons to bottom */
+.art-card__overlay-spacer {
+	flex: 1 1 auto;
+}
+
+/* Browse more – right aligned, above view details */
+.art-card__overlay-browse {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.35rem;
+	padding: 0.5rem 1.1rem;
+	border: 1px solid #ffffff;
+	border-radius: 3px;
+	background: #ffffff;
+	color: var(--page-color);
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 0.82rem;
+	text-decoration: none;
+	cursor: pointer;
+	transition: background 160ms ease, color 160ms ease;
+	white-space: nowrap;
+	align-self: flex-end;
+	margin-bottom: 0.5rem;
+}
+
+.art-card__overlay-browse:hover {
+	background: var(--page-color);
+	color: #ffffff;
+}
+
+/* View details – right aligned, bottom right */
+.art-card__overlay-detail {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.35rem;
+	padding: 0.5rem 1.1rem;
+	border: 1px solid #ffffff;
+	border-radius: 3px;
+	background: #ffffff;
+	color: var(--page-color);
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 0.82rem;
+	text-decoration: none;
+	cursor: pointer;
+	transition: background 160ms ease, color 160ms ease;
+	white-space: nowrap;
+	align-self: flex-end;
+}
+
+.art-card__overlay-detail:hover {
+	background: var(--page-color);
+	color: #ffffff;
+}
+
+/* Mobile browse link (below image) – hidden on desktop */
+.art-card__mobile-browse,
+.art-card__mobile-detail {
+	display: none;
+	border: 2px solid var(--page-color);
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.4rem;
+	padding: 0.7rem 1.6rem;
+	border-radius: 3px;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 0.95rem;
+	text-decoration: none;
+	cursor: pointer;
+	transition: background 160ms ease, color 160ms ease;
+}
+
+.btn .material-symbols-outlined {
+	font-size: 1.2rem;
+}
+
+.btn--outline-white {
+	background: transparent;
+	color: #ffffff;
+	border: 1.5px solid #ffffff;
+}
+
+.btn--outline-white:hover {
+	background: #ffffff;
+	color: var(--page-color);
+}
+
+.btn--solid-white {
+	background: #ffffff;
+	color: var(--page-color);
+	border: 1.5px solid #ffffff;
+}
+
+.btn--solid-white:hover {
+	background: var(--page-color);
+	color: #ffffff;
+}
+
+/* ===== PAGE CARDS (artists, museums) ===== */
+.page-card {
+	position: relative;
+	border-radius: 8px;
+	overflow: hidden;
+	background: #ffffff;
+	text-decoration: none;
+	color: #333;
+	transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.page-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.page-card__image {
+	width: 100%;
+	aspect-ratio: 3/2;
+	object-fit: cover;
+	display: block;
+}
+
+.page-card__body {
+	padding: 1rem 1.2rem 1.2rem;
+}
+
+.page-card__name {
+	font-size: 1.05rem;
+	font-weight: 600;
+	margin-bottom: 0.35rem;
+}
+
+.page-card__meta {
+	font-size: 0.85rem;
+	color: #666;
+	margin-bottom: 0.5rem;
+}
+
+.page-card__desc {
+	font-size: 0.88rem;
+	line-height: 1.5;
+	color: #555;
+}
+
+.page-card__accent {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 4px;
+}
+
+/* ===== FILTER SIDEBAR (for gallery) ===== */
+.filter-group {
+	margin-bottom: 1.5rem;
+}
+
+.filter-group__title {
+	font-size: 0.9rem;
+	font-weight: 600;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	margin-bottom: 0.5rem;
+	color: #333;
+}
+
+.filter-group label {
+	display: flex;
+	align-items: center;
+	gap: 0.45rem;
+	padding: 0.25rem 0;
+	font-size: 0.88rem;
+	cursor: pointer;
+}
+
+.filter-group input[type="checkbox"] {
+	accent-color: var(--page-color);
+}
+
+/* ===== SECTION HEADING ===== */
+.section-heading {
+	font-size: 1.8rem;
+	font-weight: 700;
+	margin-bottom: 1.2rem;
+	color: #222;
+}
+
+.section-subheading {
+	font-size: 1rem;
+	color: #666;
+	max-width: 60ch;
+	margin-bottom: 2rem;
+	line-height: 1.6;
+}

@@ -18,9 +18,15 @@
 - Documentation 5%
 
 # How to navigate
-- This repository is organized by week.
+- This repository is organized by week, as well as the midterm project.
 - Each week has a folder containing the in-class exercises and assignments.
-- The `README.md` file in each week folder provides a brief overview of the week's topics.
+- The `README.md` file in each folder provides a brief overview.
+
+# Projects
+## Midterm Project
+- [Midterm Project Folder](MidtermProject)
+- [Midterm Project README](MidtermProject/README.md)
+- [Live Public Website](https://yoonjaejoung.github.io/ModernArtGuide/index.html)
 
 # Each Week's Topics
 ## Week 1
@@ -51,15 +57,11 @@
 ### Lecture Materials
 - [Positioning 101](Week04/Positioning/README.md)
 - [CSS3 Transforms & Transitions](Week04/CSS3TransformsTransitions/README.md)
-- [Flexbox](Week04/Flexbox/README.md)
-- [Media Queries](Week04/MediaQueries/README.md)
 ### In Class Exercise
 - [Positioning](Week04/Positioning/InClassExercise/index.html)
 - [Navbar Dropdown](Week04/NavbarDropdown/index.html)
 - [Gallery](Week04/Gallery/InClassExercise/index.html)
 - [CSS3 Transforms & Transitions](Week04/CSS3TransformsTransitions/InClassExercise/index.html)
-- [Flexbox](Week04/Flexbox/InClassExercise/Index.html)
-- [Media Queries](Week04/MediaQueries/InClassExercise/index.html)
 ### Assignment
 - [Midterm Project Proposal](Week04/HW/MidtermProposal.md)
 
@@ -67,6 +69,29 @@
 * no class
 
 ## Week 6
-### Lecture Materials
+### Topic: Flexbox & Midterm Preparation
 ### In Class Exercise
+- [Flexbox](Week06/Flexbox/InClassExercise/Index.html)
+### README
+- [Week 06 Overview](Week06/README.md)
+
+## Week 7
+### Topic: Media Queries, Modals, and Portfolio
+### In Class Exercise
+- [Media Queries](Week07/MediaQueries/InClassExercise/index.html)
+- [Modals (CSS No JS)](Week07/ModalsCSSNoJS/index.html)
 ### Assignment
+- [Portfolio Implementation](Week07/Portfolio/index.html)
+### README
+- [Week 07 Overview](Week07/README.md)
+
+## Week 8
+### Topic: CSS Variables, Contact Forms, and Photoshop
+### Lecture Material
+- [Photoshop Essentials and Image Optimization](Week08/Photoshop/README.md)
+### In Class Exercise
+- [CSS Variables & Contact Form](Week08/CSSVarsContactForm/InClassExercise/index.html)
+### Assignment
+- [Finish Midterm Project](Week08/README.md)
+### README
+- [Week 08 Overview](Week08/README.md)
