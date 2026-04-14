@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Final Project Proposal: Interactive Modern Art Library</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+
+    <!-- Clean Black and White Theme -->
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #000000;
+            --accent-color: #000000;
+            --border-color: #000000;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        .reveal .slides {
+            text-align: left;
+        }
+
+        .reveal h1,
+        .reveal h2,
+        .reveal h3,
+        .reveal h4 {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-weight: bold;
+            color: var(--text-color);
+            text-transform: none;
+            letter-spacing: -0.02em;
+        }
+
+        .reveal h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            border-bottom: 4px solid var(--border-color);
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        .reveal h2 {
+            font-size: 2.5em;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            display: inline-block;
+        }
+
+        .reveal p,
+        .reveal li {
+            color: var(--text-color);
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .reveal .controls,
+        .reveal .progress {
+            color: var(--text-color);
+        }
+
+        .content-block {
+            border: 2px solid var(--border-color);
+            padding: 40px;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 8px 16px;
+            border: 2px solid var(--border-color);
+            color: var(--text-color);
+            font-weight: bold;
+            font-size: 0.6em;
+            margin-right: 12px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        ul li::before {
+            content: '■';
+            position: absolute;
+            left: 0;
+            font-size: 0.8em;
+            top: 0.2em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- Slide 1: Title -->
+            <section class="center" style="text-align: center;">
+                <div style="margin-bottom: 20px;">
+                    <span class="tag">Final Project Proposal</span>
+                </div>
+                <h1 style="border: none; padding: 0;">Interactive Modern<br>Art Library</h1>
+                <p style="text-align: center; margin-top: 30px; font-size: 1.4em; font-weight: bold;">Evolving the
+                    "Modern Art Guide"</p>
+            </section>
+
+            <!-- Slide 2: The Vision -->
+            <section>
+                <h2>The Vision</h2>
+                <div class="content-block">
+                    <p>I plan to extend the Midterm Project into a highly interactive, completed web experience.</p>
+                    <p style="margin-top: 20px;">The site will evolve into a virtual <strong>"Library of Modern
+                            Art"</strong> focusing on:</p>
+                    <ul style="margin-top: 30px;">
+                        <li>Enhanced UI/UX and visual fidelity</li>
+                        <li>Deeper content structure</li>
+                        <li>Fluid, physics-based interactions</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Slide 3: New Content -->
+            <section>
+                <h2>1. Content Expansion</h2>
+                <div class="content-block">
+                    <p>Expanding the timeline past Dada to cover crucial later movements, bringing the library up to the
+                        contemporary era.</p>
+
+                    <div style="margin-top: 30px;">
+                        <span class="tag">Surrealism</span>
+                        <span class="tag">Pop Art</span>
+                        <span class="tag">Modern Architecture</span>
+                        <span class="tag">Abstract Expressionism</span>
+                        <span class="tag">Contemporary</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 4: Interactions (JS) -->
+            <section>
+                <h2>2. Interactive Physics</h2>
+                <div class="content-block">
+                    <p>Fulfilling the custom JavaScript requirement with engaging, playful elements:</p>
+                    <ul style="margin-top: 20px;">
+                        <li><strong>Draggable Library Books:</strong> Homepage art movements represented as interactive
+                            book objects.</li>
+                        <div style="margin: 20px 0;">
+                            <img src="reference1.png" alt="Draggable Books"
+                                style="max-height: 200px; border: 1px solid var(--border-color);">
+                        </div>
+                        <li><strong>External Framework:</strong> Leveraging GSAP or Interact.js to power drag-and-drop
+                            physics and 3D opening animations.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Slide 5: Search & Filter -->
+            <section>
+                <h2>3. Dynamic Filtering & Gallery</h2>
+                <div class="content-block" style="display: flex; gap: 20px; align-items: center;">
+                    <div style="flex: 1;">
+                        <p>Building custom JS functionality for the Artworks/Gallery pages.</p>
+                        <ul style="margin-top: 30px;">
+                            <li>Search functionality by Artist or Artwork Name</li>
+                            <li>Dynamic filtering of the gallery based on Art Movement</li>
+                            <li><strong>Stack Gallery View:</strong> Layered view for artworks</li>
+                            <li>Instant, seamless UI updates</li>
+                        </ul>
+                    </div>
+                    <div style="flex: 1; text-align: center;">
+                        <img src="reference2.png" alt="Stack Gallery View"
+                            style="max-height: 250px; border: 1px solid var(--border-color);">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 6: Bootstrap & Polish -->
+            <section>
+                <h2>4. Framework & Polish</h2>
+
+                <div style="display: flex; gap: 30px; margin-top: 20px;">
+                    <div class="content-block" style="flex: 1;">
+                        <h3 style="font-size: 1.5em; margin-bottom: 15px;">Bootstrap Integration</h3>
+                        <p style="font-size: 0.9em;">Supplementing custom CSS component library where necessary,
+                            focusing on functional elements:</p>
+                        <ul style="font-size: 0.9em; margin-top: 15px;">
+                            <li>Responsive Navbars</li>
+                            <li>Modals for zoomed-in artwork viewing</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-block" style="flex: 1;">
+                        <h3 style="font-size: 1.5em; margin-bottom: 15px;">Site Completion</h3>
+                        <p style="font-size: 0.9em;">Ensuring a flawless, production-ready final deliverable:</p>
+                        <ul style="font-size: 0.9em; margin-top: 15px;">
+                            <li>Zero missing links</li>
+                            <li>No placeholder pages</li>
+                            <li>Full responsiveness</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 7: Outro -->
+            <section class="center" style="text-align: center;">
+                <div class="content-block" style="display: inline-block;">
+                    <h2 style="font-size: 3em; margin: 0; padding: 0; border: none;">Thank You</h2>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            controls: true,
+            progress: true,
+            center: false,
+            transition: 'none', // Removed transition animations for more stark minimal style
+            margin: 0.1,
+            width: 1100
+        });
+    </script>
+</body>
+
+</html>
