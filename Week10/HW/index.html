@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JS Objects Lesson</title>
+  </head>
+  <body>
+    <h1>Open the Console to see your output!</h1>
+
+    <script>
+      // --- Section 2: Creating an Object ---
+      console.log("--- Section 2 ---");
+      const person = {
+        name: "Alex",
+        age: 22,
+        isStudent: true,
+      };
+      console.log(person);
+
+      // --- Section 3: Accessing Properties ---
+      console.log("--- Section 3 ---");
+      const movie = {
+        title: "Inception",
+        year: 2010,
+        director: "Christopher Nolan",
+      };
+      
+      console.log(movie.title);
+      console.log(movie["director"]);
+      
+      let field = "year";
+      console.log(movie[field]);
+
+      // --- Section 4: Modifying Objects ---
+      console.log("--- Section 4 ---");
+      const car = {
+        make: "Toyota",
+        model: "Camry",
+        year: 2020,
+      };
+      
+      car.year = 2024;
+      car.color = "blue";
+      delete car.model;
+      
+      console.log(car);
+
+      // --- Section 5: Object Methods ---
+      console.log("--- Section 5 ---");
+      const dog = {
+        name: "Biscuit",
+        breed: "Beagle",
+        bark() {
+          console.log(this.name + " says: Woof!");
+        },
+      };
+      
+      dog.bark();
+      
+      dog.describe = function () {
+        console.log(this.name + " is a " + this.breed);
+      };
+      dog.describe();
+
+      // --- Section 6: Built-in Object Methods ---
+      console.log("--- Section 6 ---");
+      const laptop = {
+        brand: "Apple",
+        model: "MacBook Pro",
+        ram: 16,
+        storage: 512,
+      };
+      
+      console.log(Object.keys(laptop));
+      console.log(Object.values(laptop));
+      console.log(Object.entries(laptop));
+
+      // --- Section 7: Putting It All Together ---
+      console.log("--- Section 7 ---");
+      const book = {
+        title: "The Hobbit",
+        author: "J.R.R. Tolkien",
+        pages: 310,
+        isAvailable: true
+      };
+
+      console.log(book.title);
+      console.log(book["author"]);
+      
+      book.genre = "Fantasy";
+      book.isAvailable = false;
+      
+      book.describe = function() {
+        console.log(`${this.title} by ${this.author} — ${this.pages} pages`);
+      };
+      book.describe();
+      
+      console.log(Object.keys(book));
+
+      // --- Challenge (Optional) ---
+      console.log("--- Challenge ---");
+      const library = {
+        books: [
+          { title: "The Hobbit", author: "J.R.R. Tolkien" },
+          { title: "1984", author: "George Orwell" },
+          { title: "Dune", author: "Frank Herbert" }
+        ],
+        listTitles() {
+          this.books.forEach(b => console.log(b.title));
+        }
+      };
+      
+      library.listTitles();
+    </script>
+  </body>
+</html>

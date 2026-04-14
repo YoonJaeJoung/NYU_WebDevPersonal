@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Random Content</title>
+    <script>
+      // make an array of image srcs to choose from at random when the page loads!
+      var arrImg = [
+        'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hausziege_04.jpg/1920px-Hausziege_04.jpg',
+        'https://upload.wikimedia.org/wikipedia/commons/7/78/Goats_in_an_argan_tree_Morocco.jpg',
+        'https://assets.farmsanctuary.org/content/uploads/2025/01/31130911/2019_01_18_FSAC_Freddy_Goat_DM_2004-1600x1066.jpg',
+      ]
+
+      // random links to correspond with each image
+      var arrLinks = [
+        'https://en.wikipedia.org/wiki/Goat',
+        'https://en.wikipedia.org/wiki/Goat#/media/File:Goats_in_an_argan_tree_Morocco.jpg',
+        'https://www.farmsanctuary.org/news-stories/eight-things-you-didnt-know-about-goats/',
+      ]
+
+      // helper function for a rand num btwn 0 and max
+      function randomIndex(max) {
+        return Math.floor(Math.random() * max)
+      }
+
+      // write our own image function outside of our event listeners
+      // remember to not call this function until the dom content loads!
+
+      function loadRandomImage() {
+        var index = randomIndex(arrImg.length)
+        var img = document.getElementById('animal')
+        var link = document.getElementById('dynLink')
+
+        // assign the src attribute of the image element to a string stored in a random index slot
+        img.src = arrImg[index]
+        link.href = arrLinks[index]
+      }
+
+      // wait for the page to finish loading before calling any load functions that need to access any HTML elements on the page
+      document.addEventListener('DOMContentLoaded', function () {
+        loadRandomImage()
+      })
+    </script>
+  </head>
+  <body>
+    <a href="#" id="dynLink" target="_blank"><img src="" id="animal" /></a>
+  </body>
+</html>

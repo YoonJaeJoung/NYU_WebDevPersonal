@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Math Methods</title>
+    <script>
+      var x = 15 // this is how we declare and assign variable a integer value
+      var y = 35
+      var z // declare a variable name but assign value later
+      // later on in your code you can assign a value like:
+      z = 10.5 //floating point number
+
+      // addition
+      console.log(x + y)
+      // subtraction
+      console.log(x - y)
+      // multiplication
+      console.log(x * y)
+      // division
+      console.log(x / y)
+
+      // modular operator % returns the division remainder
+      // this is really helpful when you want to use odd/even or every nth number
+      console.log(11 % 3)
+
+      //increment by 1
+      x++
+      //decrement by 1
+      x--
+
+      // increment by a certain number
+      x += 2 // x = x+2
+      x -= 3 // x = x-3
+      console.log(x)
+
+      // just like algebra, order of operations and () matter!
+      console.log((4 + 5) * 9)
+      console.log(4 + 5 * 9)
+
+      // floats or floating point numbers and some basic built in JS math methods
+      var k = 2.45
+      // Math.floor() will round down every time
+      var kDown = Math.floor(k)
+      // Math.ceil() will round up every time
+      var kUp = Math.ceil(k)
+      console.log('kDown: ', kDown, 'kUp: ', kUp)
+
+      // Math.round() will round up and down to the nearest integer
+      console.log(Math.round(k))
+
+      // Math.random() does not receive any arguments, it just spits out a floating point number between 0 and 1
+      console.log(Math.random())
+
+      // We can combine Math.random() with Math.round to get a 0 or 1 situation we could turn into a boolean
+      var yn = Math.round(Math.random())
+      console.log(yn)
+
+      if (yn === 0) {
+        console.log(false)
+      } else {
+        console.log(true)
+      }
+
+      // random number between 0 and n
+      // we need a function that takes an argument/parameter
+      // this is a variable we can change every time we run our function
+
+      function randNum(num) {
+        // when we declare a variable inside a function, that var is not accessible outside of the {}
+        // this variable is SCOPED, same thing goes for parameters
+        var rn = Math.round(num * Math.random())
+        console.log(rn)
+      }
+      // call the function and don't forget to pass in a value for num
+      randNum(99)
+      // a random number between 0 and X is a great way to randomly access a slot in an array
+
+      // random num between min and max
+      function randNumRange(min, max) {
+        var rn = Math.round(Math.random() * (max - min) + min)
+        return rn
+      }
+
+      var randomRangeVar = randNumRange(33, 78)
+
+      console.log(randomRangeVar)
+    </script>
+  </head>
+
+  <body></body>
+</html>

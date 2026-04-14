@@ -28,6 +28,11 @@
 - [Midterm Project README](MidtermProject/README.md)
 - [Live Public Website](https://yoonjaejoung.github.io/ModernArtGuide/index.html)
 
+## Final Project
+- [Final Project Folder](FinalProject)
+- [Final Project Proposal](FinalProject/proposal/proposal.md)
+- [Final Project Instructions](FinalProject/instruction.md)
+
 # Each Week's Topics
 ## Week 1
 ### In Class Exercise
@@ -95,3 +100,30 @@
 - [Finish Midterm Project](Week08/README.md)
 ### README
 - [Week 08 Overview](Week08/README.md)
+
+## Week 9
+### Topic: Arrays, CSS Grid, and Math
+### In Class Exercise
+- [Arrays](Week09/Arrays/InClassExercise)
+- [Math](Week09/Math/InClassExercise)
+### README
+- [Week 09 Overview](Week09/README.md)
+- [CSS Grid Overview](Week09/CSSGrid/README.md)
+
+## Week 10
+### Topic: Async Data/DOM, JS Objects, and JSON
+### In Class Exercise
+- [Javascript Objects JSON](Week10/JavascriptObjectsJSON/InClassExercise)
+- [Async Data DOM - Finished](Week10/AsyncDataDOM/finished.html)
+### README
+- [Async Data DOM](Week10/AsyncDataDOM/README.md)
+- [JS Objects](Week10/JSObjects/README.md)
+
+## Week 11
+### Topic: Geolocation, Local Storage, and User Input
+### In Class Exercise
+- [Geolocation Implementation](Week11/Geolocation/index.html)
+- [Local Storage Implementation](Week11/LocalStorage/index.html)
+- [User Input](Week11/UserInput/InClassExercise)
+### README
+- [Week 11 Overview](Week11/README.md)
